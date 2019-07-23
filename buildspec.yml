@@ -11,4 +11,4 @@ phases:
 artifacts:
   files:
     - 'Dockerfile'
-    - 'target/homework-1.0.0-SNAPSHOT.jar'
+    - 'target/homework-1.0-SNAPSHOT.jar'
