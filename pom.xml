@@ -104,7 +104,6 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>28.0-jre</version>
-            <!-- or, for Android: -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -120,6 +119,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version>2.1.6.RELEASE</version>
         </dependency>
     </dependencies>
 </project>
