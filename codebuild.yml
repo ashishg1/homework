@@ -1,15 +1,10 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: Continuous Integration for project
+Description: Codebuild
 
 Parameters:
   ProjectName:
     Type: String
     Default: Homework
-  GitHubBranch:
-    Type: String
-    Description: Git branch to build off of.
-    Default: master
-
 
 Resources:
   # S3 bucket where build artifacts go
@@ -18,9 +13,7 @@ Resources:
     DeletionPolicy: Delete
     Properties:
       AccessControl: Private
-      VersioningConfiguration:
-        # The guide recommends Enabled but I can't see why
-        Status: Suspended
+      BucketName: homeworkbucketcodedeploy
 
   CodeBuildServiceRole:
     Type: AWS::IAM::Role
@@ -65,6 +58,8 @@ Resources:
       Artifacts:
         Type: S3
         Location: !Ref DeploymentArtifactBucket
+        Name: app.zip
+        Packaging: ZIP
       Source:
         Auth:
           Type: OAUTH
@@ -80,3 +75,10 @@ Resources:
           - Name: BUILD_ARTIFACT_BUCKET
             Value: !Ref DeploymentArtifactBucket
       TimeoutInMinutes: 10
+
+Outputs:
+  BucketName:
+    Description: 'Name of the bucket'
+    Value: !Ref DeploymentArtifactBucket
+    Export:
+      Name: !Sub ${AWS::StackName}:BucketName

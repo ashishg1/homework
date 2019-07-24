@@ -80,7 +80,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.1.6.RELEASE</version>
                 <configuration>
-                    <mainClass>com.dv.web.DividendSpring</mainClass>
+                    <mainClass>com.loyalty.homework.SpringBootApp</mainClass>
                 </configuration>
                 <executions>
                     <execution>
