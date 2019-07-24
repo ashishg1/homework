@@ -1,1 +1,10 @@
-<p>message works!</p>
+<form (ngSubmit)="saveMessage()" #f="ngForm">
+  <input type="text" name="message" [(ngModel)]="message">
+  <input type="submit" class="btn btn-primary" value="Done">
+</form>
+
+<div>
+  Response from server:
+  {{response}}
+</div>
+

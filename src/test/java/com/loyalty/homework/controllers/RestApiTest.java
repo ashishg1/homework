@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -21,26 +21,16 @@ public class RestApiTest {
 
     @Test
     public void testCloneReturnsText() throws Exception {
-        mvc.perform(get("/api/v1/clone?text=something"))
+        mvc.perform(post("/api/v1/clone").content("something"))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(content().string(containsString("something")));
 
     }
 
     @Test
-    public void testCloneEmptyReturnsEmpty() throws Exception {
-        mvc.perform(get("/api/v1/clone?text="))
-                .andExpect(status().is2xxSuccessful())
-                .andExpect(content().string(containsString("")));
-
-    }
-
-    @Test
-    public void testCloneNoParameterReturnsEmpty() throws Exception {
-        mvc.perform(get("/api/v1/clone"))
-                .andExpect(status().is2xxSuccessful())
-                .andExpect(content().string(containsString("")));
-
+    public void testCloneEmptyReturns4xx() throws Exception {
+        mvc.perform(post("/api/v1/clone").content(""))
+                .andExpect(status().is4xxClientError());
 
     }
 

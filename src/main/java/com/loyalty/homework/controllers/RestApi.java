@@ -1,9 +1,6 @@
 package com.loyalty.homework.controllers;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Rest Api Controller
@@ -17,8 +14,9 @@ public class RestApi {
      * @param text source text
      * @return same as source text
      */
-    @RequestMapping(value = "/api/v1/clone", method = RequestMethod.GET)
-    public String clone(@RequestParam(value = "text", required = false) final String text) {
+    @CrossOrigin
+    @RequestMapping(value = "/api/v1/clone", method = RequestMethod.POST)
+    public String clone(@RequestBody final String text) {
         return text;
     }
 }
