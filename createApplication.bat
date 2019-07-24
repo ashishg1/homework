@@ -1,0 +1,1 @@
+aws elasticbeanstalk create-application --application-name Homework

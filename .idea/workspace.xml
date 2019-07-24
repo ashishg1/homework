@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deleteEnv.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployEnv.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/createApplication.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleteApplication.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codebuild.yml" beforeDir="false" afterPath="$PROJECT_DIR$/codebuild.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployEnv.bat" beforeDir="false" afterPath="$PROJECT_DIR$/deployEnv.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ebs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ebs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codebuild.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
+            <state relative-caret-position="13">
               <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
             </state>
           </provider>
@@ -50,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -65,26 +63,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ebs.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="472">
+              <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deleteApplication.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deployEnv.bat">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/buildspec.yml">
+        <entry file="file://$PROJECT_DIR$/createApplication.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state>
+              <caret selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -103,18 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,6 +138,9 @@
       <find>Homework</find>
       <find>micro</find>
       <find>ProjectName</find>
+      <find>HomeworkApplication</find>
+      <find>ApplicationName</find>
+      <find>HomeworkApplicationVersion</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,11 +168,13 @@
         <option value="$PROJECT_DIR$/delete-all.bat" />
         <option value="$PROJECT_DIR$/deploy-all.bat" />
         <option value="$PROJECT_DIR$/codepipeline.yml" />
-        <option value="$PROJECT_DIR$/deployEnv.bat" />
         <option value="$PROJECT_DIR$/codebuild.yml" />
-        <option value="$PROJECT_DIR$/ebs.yml" />
         <option value="$PROJECT_DIR$/deleteEnv.bat" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" />
+        <option value="$PROJECT_DIR$/createApplication.bat" />
+        <option value="$PROJECT_DIR$/deleteApplication.bat" />
+        <option value="$PROJECT_DIR$/ebs.yml" />
+        <option value="$PROJECT_DIR$/deployEnv.bat" />
       </list>
     </option>
   </component>
@@ -449,7 +449,28 @@
       <option name="project" value="LOCAL" />
       <updated>1563935095983</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Continous Integration done">
+      <created>1563942316052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563942316052</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Continous Integration done">
+      <created>1563942618154</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563942618154</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Continous Integration done">
+      <created>1563942648262</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1563942648262</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -480,9 +501,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" />
       <window_info anchor="bottom" id="Statistic" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32444444" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32444444" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -507,7 +528,8 @@
     <MESSAGE value="buildspec version typo" />
     <MESSAGE value="Dockerfile version typo" />
     <MESSAGE value="Typo in file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Typo in file" />
+    <MESSAGE value="Continous Integration done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continous Integration done" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -571,38 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployEnv.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codebuild.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deleteEnv.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ebs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -613,6 +607,48 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deleteEnv.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codebuild.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createApplication.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deleteApplication.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebs.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployEnv.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>

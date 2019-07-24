@@ -7,15 +7,10 @@ Parameters:
     Default: homework
 
 Resources:
-  HomeworkApplication:
-    Type: AWS::ElasticBeanstalk::Application
-    Properties:
-      Description: AWS Elastic Beanstalk Application
   HomeworkApplicationVersion:
     Type: AWS::ElasticBeanstalk::ApplicationVersion
     Properties:
-      ApplicationName:
-        Ref: HomeworkApplication
+      ApplicationName: Homework
       Description: AWS ElasticBeanstalk Application Version
       SourceBundle:
         S3Bucket: !Sub '${ProjectName}bucketcodedeploy'
@@ -23,8 +18,7 @@ Resources:
   HomeworkConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
     Properties:
-      ApplicationName:
-        Ref: HomeworkApplication
+      ApplicationName: Homework
       Description: AWS ElasticBeanstalk Configuration Template
       OptionSettings:
         - Namespace: aws:autoscaling:asg
@@ -40,8 +34,7 @@ Resources:
   HomeworkEnvironment:
     Type: AWS::ElasticBeanstalk::Environment
     Properties:
-      ApplicationName:
-        Ref: HomeworkApplication
+      ApplicationName: Homework
       Description: AWS ElasticBeanstalk Environment
       TemplateName:
         Ref: HomeworkConfigurationTemplate
@@ -55,3 +48,5 @@ Outputs:
       - ''
       - - 'http://'
         - !GetAtt HomeworkEnvironment.EndpointURL
+    Export:
+      Name: !Sub EnviornmentName
