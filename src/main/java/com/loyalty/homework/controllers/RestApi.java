@@ -9,6 +9,6 @@ public class RestApi {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return "Hello world";
+        return "Hello world1";
     }
 }

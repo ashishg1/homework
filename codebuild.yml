@@ -4,7 +4,7 @@ Description: Codebuild
 Parameters:
   ProjectName:
     Type: String
-    Default: Homework
+    Default: homework
 
 Resources:
   # S3 bucket where build artifacts go
@@ -13,7 +13,7 @@ Resources:
     DeletionPolicy: Delete
     Properties:
       AccessControl: Private
-      BucketName: homeworkbucketcodedeploy
+      BucketName: !Sub '${ProjectName}bucketcodedeploy'
 
   CodeBuildServiceRole:
     Type: AWS::IAM::Role
@@ -48,7 +48,6 @@ Resources:
               - s3:GetObjectVersion
               - s3:PutObject
             Resource:
-              - !Sub "arn:aws:s3:::codepipeline-${AWS::Region}-*/*"
               - !Sub "arn:aws:s3:::${DeploymentArtifactBucket}/*"
   CodeBuildProject:
     Type: AWS::CodeBuild::Project
@@ -75,10 +74,3 @@ Resources:
           - Name: BUILD_ARTIFACT_BUCKET
             Value: !Ref DeploymentArtifactBucket
       TimeoutInMinutes: 10
-
-Outputs:
-  BucketName:
-    Description: 'Name of the bucket'
-    Value: !Ref DeploymentArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}:BucketName

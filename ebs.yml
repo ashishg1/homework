@@ -1,6 +1,11 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: EBS
 
+Parameters:
+  ProjectName:
+    Type: String
+    Default: homework
+
 Resources:
   HomeworkApplication:
     Type: AWS::ElasticBeanstalk::Application
@@ -13,7 +18,7 @@ Resources:
         Ref: HomeworkApplication
       Description: AWS ElasticBeanstalk Application Version
       SourceBundle:
-        S3Bucket: !ImportValue Homework:BucketName
+        S3Bucket: !Sub '${ProjectName}bucketcodedeploy'
         S3Key: app.zip
   HomeworkConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
@@ -49,3 +54,11 @@ Outputs:
     Value: !Join
       - ''
       - - 'http://'
+        - !GetAtt HomeworkEnvironment.EndpointURL
+    Export:
+      Name: !Sub ApplicationURL
+  EnviornmentName:
+    Description: 'ElasticBeanstalk environment Name'
+    Value: !Ref HomeworkEnvironment
+    Export:
+      Name: !Sub EnviornmentName
