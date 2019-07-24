@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - mvn clean
+      - mvn install
+artifacts:
+  files:
+    - 'Dockerfile'
+    - 'target/homework-1.0-SNAPSHOT.jar'
