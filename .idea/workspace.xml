@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="">
+    <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="Step 2: A clone api that returns the text passed to it with some tests">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,35 +25,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="65" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
+            <state>
+              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudformation/codebuild.yml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudformation/deleteEnv.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="255">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,57 +44,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudformation/ebs.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudformation/deleteApplication.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="55" selection-start-column="55" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cloudformation/deployEnv.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudformation/createApplication.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="450">
+              <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,9 +122,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApplication.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiTest.java" />
         <option value="$PROJECT_DIR$/template.yaml" />
         <option value="$PROJECT_DIR$/buildspec.yml" />
         <option value="$PROJECT_DIR$/Dockerfile" />
@@ -166,11 +133,15 @@
         <option value="$PROJECT_DIR$/codepipeline.yml" />
         <option value="$PROJECT_DIR$/codebuild.yml" />
         <option value="$PROJECT_DIR$/deleteEnv.bat" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" />
         <option value="$PROJECT_DIR$/createApplication.bat" />
         <option value="$PROJECT_DIR$/deleteApplication.bat" />
         <option value="$PROJECT_DIR$/ebs.yml" />
         <option value="$PROJECT_DIR$/deployEnv.bat" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" />
       </list>
     </option>
   </component>
@@ -262,6 +233,13 @@
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -278,6 +256,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -320,21 +307,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SpringBootApp">
-    <configuration name="SpringBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.SpringBootApp" />
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.loyalty.homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestApiTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.loyalty.homework in homework">
+    <configuration name="RestApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework" />
       <extension name="coverage">
         <pattern>
@@ -344,13 +318,60 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.loyalty.homework.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.controllers.RestApiTest" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestApiTest.testClone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loyalty.homework.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.loyalty.homework.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.controllers.RestApiTest" />
+      <option name="METHOD_NAME" value="testClone" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootAppTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RestApiTest.testCloneNoParameterReturnsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loyalty.homework.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.loyalty.homework.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.controllers.RestApiTest" />
+      <option name="METHOD_NAME" value="testCloneNoParameterReturnsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestApiTest.testCloneNoTextReturnsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loyalty.homework.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.loyalty.homework.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.controllers.RestApiTest" />
+      <option name="METHOD_NAME" value="testCloneNoTextReturnsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.loyalty.homework in homework" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework" />
       <extension name="coverage">
         <pattern>
@@ -359,23 +380,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.loyalty.homework" />
-      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.SpringBootAppTest" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SpringBootApp" />
-      <item itemvalue="JUnit.RestApiTest.contextLoads" />
-      <item itemvalue="JUnit.SpringBootAppTest.contextLoads" />
+      <item itemvalue="JUnit.RestApiTest.testClone" />
+      <item itemvalue="JUnit.RestApiTest.testCloneNoTextReturnsEmpty" />
+      <item itemvalue="JUnit.RestApiTest" />
+      <item itemvalue="JUnit.RestApiTest.testCloneNoParameterReturnsEmpty" />
+      <item itemvalue="JUnit.com.loyalty.homework in homework" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringBootAppTest.contextLoads" />
-        <item itemvalue="JUnit.RestApiTest.contextLoads" />
-        <item itemvalue="Application.SpringBootApp" />
+        <item itemvalue="JUnit.com.loyalty.homework in homework" />
+        <item itemvalue="JUnit.RestApiTest.testCloneNoParameterReturnsEmpty" />
+        <item itemvalue="JUnit.RestApiTest" />
+        <item itemvalue="JUnit.RestApiTest.testCloneNoTextReturnsEmpty" />
+        <item itemvalue="JUnit.RestApiTest.testClone" />
       </list>
     </recent_temporary>
   </component>
@@ -485,20 +508,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestApiTest_contextLoads - 2019.07.23 at 18h 15m 27s.xml">
-      <configuration name="RestApiTest.contextLoads" configurationId="JUnit" />
+    <history-entry file="RestApiTest_testClone - 2019.07.24 at 10h 26m 42s.xml">
+      <configuration name="RestApiTest.testClone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestApiTest_contextLoads - 2019.07.23 at 18h 16m 20s.xml">
-      <configuration name="RestApiTest.contextLoads" configurationId="JUnit" />
+    <history-entry file="RestApiTest_testClone - 2019.07.24 at 10h 28m 09s.xml">
+      <configuration name="RestApiTest.testClone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringBootAppTest_contextLoads - 2019.07.23 at 18h 17m 22s.xml">
-      <configuration name="SpringBootAppTest.contextLoads" configurationId="JUnit" />
+    <history-entry file="RestApiTest_testClone - 2019.07.24 at 10h 29m 21s.xml">
+      <configuration name="RestApiTest.testClone" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiTest_testClone - 2019.07.24 at 10h 30m 01s.xml">
+      <configuration name="RestApiTest.testClone" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiTest_testCloneNoTextReturnsEmpty - 2019.07.24 at 10h 30m 47s.xml">
+      <configuration name="RestApiTest.testCloneNoTextReturnsEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiTest - 2019.07.24 at 10h 30m 56s.xml">
+      <configuration name="RestApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiTest - 2019.07.24 at 10h 31m 53s.xml">
+      <configuration name="RestApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiTest - 2019.07.24 at 10h 34m 21s.xml">
+      <configuration name="RestApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiTest_testCloneNoParameterReturnsEmpty - 2019.07.24 at 10h 36m 14s.xml">
+      <configuration name="RestApiTest.testCloneNoParameterReturnsEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_loyalty_homework_in_homework - 2019.07.24 at 10h 38m 52s.xml">
+      <configuration name="com.loyalty.homework in homework" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -507,12 +552,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Statistic" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32444444" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -554,16 +599,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework.template.yaml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/buildspec.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -571,21 +606,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codepipeline.yml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="65" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
+        <state>
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -600,16 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,20 +656,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cloudformation/deployEnv.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.8.RELEASE/spring-test-5.1.8.RELEASE-sources.jar!/org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="260" column="41" selection-start-line="260" selection-start-column="41" selection-end-line="260" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.8.RELEASE/spring-test-5.1.8.RELEASE.jar!/org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/2.1.6.RELEASE/spring-boot-actuator-2.1.6.RELEASE.jar!/org/springframework/boot/actuate/metrics/web/servlet/WebMvcTags.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="450">
+          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudformation/deployEnv.bat">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="221">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
