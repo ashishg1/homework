@@ -23,6 +23,6 @@ export class HttpClientService {
            
 
             return this.http.post(Url, message, requestOptions)
-                  .map((response: Response) => response.json())
+                  .map((response: Response) => response.json().message)
 	}
 }

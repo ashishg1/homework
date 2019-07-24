@@ -1,4 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<form (ngSubmit)="saveMessage()" #f="ngForm">
+  <input type="text" name="message" [(ngModel)]="message">
+  <input type="submit" class="btn btn-primary" value="Done">
+</form>
+
 <div>
-<router-outlet></router-outlet>
+  Response from server:
+  {{response}}
 </div>

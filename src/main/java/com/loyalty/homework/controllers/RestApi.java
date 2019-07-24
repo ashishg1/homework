@@ -1,5 +1,6 @@
 package com.loyalty.homework.controllers;
 
+import com.loyalty.homework.dto.Message;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -16,7 +17,7 @@ public class RestApi {
      */
     @CrossOrigin
     @RequestMapping(value = "/api/v1/clone", method = RequestMethod.POST)
-    public String clone(@RequestBody final String text) {
-        return text;
+    public Message clone(@RequestBody final String text) {
+        return new Message(text);
     }
 }
