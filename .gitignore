@@ -5,5 +5,5 @@ target/
 src/main/web/dist
 
 # dependencies
-src/main/web/node/
+src/main/web/node
 src/main/web/node_modules

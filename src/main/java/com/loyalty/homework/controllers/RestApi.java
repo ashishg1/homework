@@ -18,7 +18,7 @@ public class RestApi {
      * @return same as source text
      */
     @RequestMapping(value = "/api/v1/clone", method = RequestMethod.GET)
-    public String clone(@RequestParam(value = "text", required = false) String text) {
+    public String clone(@RequestParam(value = "text", required = false) final String text) {
         return text;
     }
 }
