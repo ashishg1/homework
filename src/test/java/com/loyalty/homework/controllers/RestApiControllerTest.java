@@ -13,8 +13,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(RestApi.class)
-public class RestApiTest {
+@WebMvcTest(RestApiController.class)
+public class RestApiControllerTest {
 
     @Autowired
     private MockMvc mvc;

@@ -1,6 +1,6 @@
 package com.loyalty.homework;
 
-import com.loyalty.homework.controllers.RestApi;
+import com.loyalty.homework.controllers.RestApiController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class SpringBootAppTest {
 
     @Autowired
-    private RestApi restApi;
+    private RestApiController restApi;
 
 
     @Test
