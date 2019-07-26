@@ -7,8 +7,8 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 public class DynamoDBLiveFixture extends DynamoDBFixture {
 
 
-    public DynamoDBLiveFixture(final String accessKey, final String secretKey) {
-        super(accessKey, secretKey);
+    public DynamoDBLiveFixture() {
+        super();
     }
 
     @Override

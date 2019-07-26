@@ -7,7 +7,8 @@ import com.amazonaws.services.dynamodbv2.model.CreateTableRequest;
 import com.amazonaws.services.dynamodbv2.model.DescribeTableResult;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
 import com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException;
-import com.loyalty.homework.dto.Message;
+import com.loyalty.homework.dto.Post;
+import com.loyalty.homework.dto.Reply;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class DynamoDBOperations {
@@ -21,7 +22,8 @@ public class DynamoDBOperations {
     public void createTables(boolean delete) throws Exception {
         final AmazonDynamoDB dynamodb = dbSupplier.getDynamoDB();
         final DynamoDBMapper mapper = new DynamoDBMapper(dynamodb, dbSupplier.getConfigBuilder().build());
-        createTable(delete, dynamodb, mapper, Message.class);
+        createTable(delete, dynamodb, mapper, Post.class);
+        createTable(delete, dynamodb, mapper, Reply.class);
     }
 
     private <T> void createTable(boolean delete, final AmazonDynamoDB dynamodb, final DynamoDBMapper mapper, Class<T> clazz) throws InterruptedException {

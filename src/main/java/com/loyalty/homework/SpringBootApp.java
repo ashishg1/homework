@@ -35,10 +35,8 @@ public class SpringBootApp {
         final boolean integration = Arrays.stream(env.getActiveProfiles()).anyMatch(profile -> profile.contains("Integration"));
         if (!integration) {
             LOGGER.info("This is not an integration enviornment. Attempting to create connection to live DynamodDB");
-            final String dynamoDBAccessKey = env.getProperty("dynamoDBAccessKey");
-            final String dynamoDBSecretKey = env.getProperty("dynamoDBSecretKey");
             final String currentEnvName = env.getProperty("currentEnvName");
-            final AmazonDynamoDB dynamoDB = new DynamoDBLiveFixture(dynamoDBAccessKey, dynamoDBSecretKey).startDynamoDB();
+            final AmazonDynamoDB dynamoDB = new DynamoDBLiveFixture().startDynamoDB();
             DBSupplier.setDynamoDB(dynamoDB, currentEnvName);
             LOGGER.info("Creating Tables");
             new DynamoDBOperations(new DBSupplier()).createTables(true);

@@ -11,7 +11,7 @@ export class HttpClientService {
       requestOptions = new RequestOptions();
   constructor(private http:Http) {
  }
-	saveMessage(message){
+	saveMessage(userName,message){
 	          var h1 = new Headers();
              h1.append('content-type', 'Application/Json');
 
@@ -19,10 +19,14 @@ export class HttpClientService {
              requestOptions.headers = h1;
              
              // Here you need to enter Url of your REST API for Post action
-             var Url="http://localhost:8080/api/v1/clone";
+             var Url="http://localhost:8080/api/v1/saveMessage";
            
 
-            return this.http.post(Url, message, requestOptions)
-                  .map((response: Response) => response.json().message)
+            return this.http.post(Url,
+             JSON.stringify({userName: userName, message: message})
+             , requestOptions).map((response: Response) => {
+                console.log(response.json().message);
+                return response.json();
+             })
 	}
 }

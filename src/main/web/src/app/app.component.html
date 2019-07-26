@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <form (ngSubmit)="saveMessage()" #f="ngForm">
+  <input type="text" name="userName" [(ngModel)]="userName">
   <input type="text" name="message" [(ngModel)]="message">
   <input type="submit" class="btn btn-primary" value="Done">
 </form>
-
-<div>
-  Response from server:
-  {{response}}
-</div>
+<br>
+<dl>
+  <dd *ngFor="let response of responses">{{response.message}}</dd>
+</dl>

@@ -1,9 +1,14 @@
 package com.loyalty.homework.controllers;
 
 import com.loyalty.homework.dto.Message;
+import com.loyalty.homework.dto.Post;
+import com.loyalty.homework.dto.Reply;
 import com.loyalty.homework.services.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Rest Api Controller
@@ -11,18 +16,41 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class RestApiController {
 
-    @Autowired
-    private MessageService messageService;
 
-    /**
-     * This api returns the text that is passed to it
-     *
-     * @param text source text
-     * @return same as source text
-     */
+    private final MessageService messageService;
+
+    @Autowired
+    public RestApiController(@NonNull final MessageService messageService) {
+        this.messageService = messageService;
+    }
+
     @CrossOrigin
-    @RequestMapping(value = "/api/v1/clone", method = RequestMethod.POST)
-    public Message clone(@RequestBody final String text) {
-        return messageService.saveMessage(text);
+    @RequestMapping(value = "/api/v1/users/{user}/post", method = RequestMethod.POST)
+    public Post post(@PathVariable final String user, @RequestBody final String message) {
+        return messageService.post(user, message);
+    }
+
+    @CrossOrigin
+    @RequestMapping(value = "/api/v1/posts/{postId}/reply", method = RequestMethod.POST)
+    public Reply replyToPost(@PathVariable final String postId, @RequestBody final String message) {
+        return messageService.replyToPost(postId, message);
+    }
+
+    @CrossOrigin
+    @RequestMapping(value = "/api/v1/posts/{postId}/{replyId}/reply", method = RequestMethod.POST)
+    public Reply replyToReply(@PathVariable final String postId, @PathVariable final String replyId, @RequestBody final String message) {
+        return messageService.replyToReply(postId, replyId, message);
+    }
+
+    @CrossOrigin
+    @RequestMapping(value = "/api/v1/users/{user}/posts", method = RequestMethod.GET)
+    public List<Message> getAllPosts(@PathVariable final String user) {
+        return messageService.getAllPosts(user);
+    }
+
+    @CrossOrigin
+    @RequestMapping(value = "/api/v1/users/{user}/posts/{postId}", method = RequestMethod.GET)
+    public List<Message> getPost(@PathVariable final String user, @PathVariable final String postId) {
+        return messageService.getPost(user, postId);
     }
 }

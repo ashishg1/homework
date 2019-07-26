@@ -9,8 +9,9 @@ import {NgForm} from '@angular/forms';
 })
 export class AppComponent {
   title = 'homework';
+  userName:string;
    message:string;
-   response:string;
+   responses:Object[];
 
     constructor(private httpClientService:HttpClientService) {
      }
@@ -19,11 +20,12 @@ export class AppComponent {
     }
 
     saveMessage() {
-      console.log("Submitting to service: " + this.message);
-      this.httpClientService.saveMessage(this.message).subscribe(
-        data => { console.log(data);this.response = data;
+      this.httpClientService.saveMessage(this.userName, this.message).subscribe(
+        data => {
+          console.log(data);
+          this.responses = data;
         },
-        error => { console.log(error);
+          error => { console.log(error);
         })
-        }
+      }
 }
