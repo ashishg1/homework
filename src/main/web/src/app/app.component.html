@@ -18,7 +18,8 @@
 <p style="margin-left: 10px;">Responses</p>
 <hr>
 
-<p *ngFor="let response of responses">{{response.message}}&nbsp;
+<p [ngStyle]="{'margin-left':(response.messageDepth * 10 + 10)+'px'}" *ngFor="let response of responses">
+  {{response.message}}&nbsp;
   <button (click)="replyToPost(response.messageId)">Reply</button>
 </p>
 
