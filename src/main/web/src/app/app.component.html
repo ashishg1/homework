@@ -1,25 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <form (ngSubmit)="post()" #f="ngForm">
   <div style="margin-left: 10px;">
-    <label style="margin-right: 10px;" for="userName">User Name</label>
+    <label style="margin-right: 10px;" for="userName">Poster's User Name</label>
     <input type="text" id="userName" name="userName" [(ngModel)]="userName">
-  </div>
-  <br>
-  <div style="margin-left: 10px;">
-    <label style="margin-right: 10px;" for="message">Message</label>
+    <label style="margin-left: 20px;margin-right: 10px;" for="message">Post/Reply Text</label>
     <input type="text" id="message" name="message" [(ngModel)]="message">
-  </div>
-  <br>
-  <div style="margin-left: 10px;">
-    <input type="submit" class="btn btn-primary" value="Post/Load">
+    <label style="margin-left: 20px;margin-right: 10px;" for="replyUserName">Replier's Username (Optional)</label>
+    <input type="text" id="replyUserName" name="replyUserName" [(ngModel)]="replyUserName">
+    <input style="margin-left: 20px;" type="submit" class="btn btn-primary" value="Post a New Message / Re-Load Posts" onclick="message.value = '';">
   </div>
 </form>
-
-<p style="margin-left: 10px;">Responses</p>
+<br>
+<label style="margin-left: 10px;color:red">{{errorMessage}}</label>
 <hr>
 
-<p [ngStyle]="{'margin-left':(response.messageDepth * 10 + 10)+'px'}" *ngFor="let response of responses">
-  {{response.message}}&nbsp;
-  <button (click)="replyToPost(response.messageId)">Reply</button>
+<p [ngStyle]="{'margin-left':(response.messageDepth * 20)+'px'}" *ngFor="let response of responses;">
+  {{response.message}}&nbsp; - {{response.userName}}
+  <button (click)="reply(response.messageId, response.rootMessageId)" onclick="message.value = '';">Reply</button>
 </p>
 

@@ -14,6 +14,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -59,7 +60,7 @@ public class MessageServiceTest {
 
     @Test
     public void testReplyReturnsValidReply() {
-        final Reply reply = messageService.replyToPost("ashish", "new message");
+        final Reply reply = messageService.replyToPost("ashish", "new message", Optional.empty());
         assertThat("root id is wrong", reply.getRootMessageId(), is("ashish"));
         assertThat("message is not valid", reply.getMessage(), is("new message"));
         assertThat("message is not valid", reply.getMessageDepth(), is(1));
@@ -67,7 +68,7 @@ public class MessageServiceTest {
 
     @Test
     public void testReplyToReplyReturnsValidReply() {
-        final Reply reply = messageService.replyToReply("ashishPost", "ashishReply", "new message");
+        final Reply reply = messageService.replyToReply("ashishPost", "ashishReply", "new message", Optional.empty());
         assertThat("root id is wrong", reply.getRootMessageId(), is("ashishPost"));
         assertThat("message is not valid", reply.getMessage(), is("new message"));
         assertThat("message is not valid", reply.getMessageDepth(), is(2));
@@ -75,12 +76,12 @@ public class MessageServiceTest {
 
     @Test(expected = IllegalStateException.class)
     public void testReplyToReplyThrowsExceptionWithInvalidPost() {
-        messageService.replyToReply("ashisPost", "ashishReply", "new message");
+        messageService.replyToReply("ashisPost", "ashishReply", "new message", Optional.empty());
     }
 
     @Test(expected = IllegalStateException.class)
     public void testReplyToReplyThrowsExceptionWithInvalidReply() {
-        messageService.replyToReply("ashisPost", "ashishRply", "new message");
+        messageService.replyToReply("ashisPost", "ashishRply", "new message", Optional.empty());
     }
 
     @Test

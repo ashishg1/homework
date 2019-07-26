@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { HttpClientService } from './service/http-client.service';
+import {Component} from '@angular/core';
+import {HttpClientService} from './service/http-client.service';
 import {NgForm} from '@angular/forms';
 
 @Component({
@@ -9,51 +9,104 @@ import {NgForm} from '@angular/forms';
 })
 export class AppComponent {
   title = 'homework';
-  userName:string;
-   message:string;
-   responses:Object[];
+  userName: string;
+  message: string;
+  errorMessage: string;
+  replyUserName: string;
+  responses: Array<any>;
 
-    constructor(private httpClientService:HttpClientService) {
-     }
+  constructor(private httpClientService: HttpClientService) {
+  }
 
-    ngOnInit() {
-      this.responses = [];
-    }
+  ngOnInit() {
+    this.responses = [];
+    this.errorMessage = "";
+  }
 
-    post() {
-
-      if (!this.message){
-      this.httpClientService.getAllPosts(this.userName).subscribe(
-              data => {
-                console.log(data);
-                this.responses = data;
-              },
-                error => { console.log(error);
-              });
+  post() {
+    if (this.userName) {
+      if (!this.message) {
+        this.loadAllPosts();
       } else {
-      this.httpClientService.post(this.userName, this.message).subscribe(
-        data => {
-          console.log(data);
-          this.responses.unshift(data);
-        },
-          error => { console.log(error);
-        });
-       }
+        this.httpClientService.post(this.userName, this.message).subscribe(
+          data => {
+            this.responses.unshift(data);
+          },
+          error => {
+            console.log(error);
+          });
       }
+      this.clear();
+    } else {
+      this.errorMessage = "Please enter a Poster's User Name";
+    }
+  }
 
-      replyToPost(messageId) {
-        this.httpClientService.replyToPost(messageId, "woohoo").subscribe(
-                data => {
-                  console.log(data);
-                },
-                  error => { console.log(error);
-                });
-         this.httpClientService.getAllPosts(this.userName).subscribe(
-               data => {
-                 console.log(data);
-                 this.responses = data;
-               },
-                 error => { console.log(error);
-               });
+  reply(messageId, rootMessageId) {
+    var message = this.message;
+    var localResponses = this.responses;
+    if (this.message) {
+      if (!rootMessageId) {
+        this.httpClientService.replyToPost(messageId, message, this.replyUserName).subscribe(
+          data => {
+            var index = this.findIndexForPostReply(messageId, localResponses);
+            this.responses.splice(index + 1, 0, data);
+          },
+          error => {
+            console.log(error);
+          });
+      } else {
+        this.httpClientService.replyToReply(rootMessageId, messageId, message, this.replyUserName).subscribe(
+          data => {
+            var index = this.findIndexForReply(messageId, localResponses);
+            this.responses.splice(index + 1, 0, data);
+          },
+          error => {
+            console.log(error);
+          });
       }
+      this.clear();
+    } else {
+      this.errorMessage = "Please enter a Reply Text";
+    }
+  }
+
+  loadAllPosts() {
+    this.httpClientService.getAllPosts(this.userName).subscribe(
+      data => {
+        this.responses = data;
+      },
+      error => {
+        console.log(error);
+      });
+  }
+
+  findIndexForPostReply(messageId, responses) {
+    var index = -1;
+    var nextIndex = responses.findIndex(function (item, i) {
+      if (index > -1) {
+        if (item.rootMessageId !== messageId) {
+          return true;
+        } else {
+          index = i;
+        }
+      }
+      if (item.messageId === messageId) {
+        index = i;
+      }
+      return false;
+    });
+    return nextIndex > -1 ? nextIndex - 1 : index;
+  }
+
+  findIndexForReply(messageId, responses) {
+    return responses.findIndex(function (item, i) {
+      return item.messageId === messageId;
+    });
+  }
+
+  clear() {
+    this.message = "";
+    this.errorMessage = "";
+  }
 }

@@ -17,4 +17,6 @@ public abstract class Message {
 
     private String message;
 
+    private String city = "";
+
 }

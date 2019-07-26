@@ -12,6 +12,7 @@ import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Message service handles all actions associated with handling messages
@@ -53,15 +54,17 @@ public class MessageService {
      *
      * @param postId  the post that is being replied to
      * @param message the reply
+     * @param replyUserName
      * @return the new unique id associated with the reply
      */
-    public Reply replyToPost(@NonNull final String postId, @NonNull final String message) {
+    public Reply replyToPost(@NonNull final String postId, @NonNull final String message, Optional<String> replyUserName) {
         Validate.notEmpty(postId, "Post id of post can not be null or empty");
         Validate.notEmpty(message, "Message can not be null or empty");
         final Reply reply = new Reply();
         reply.setRootMessageId(postId);
         reply.setMessage(message);
         reply.setMessageDepth(1);
+        reply.setUserName(replyUserName.orElseGet(() -> "anonymous"));
         replyDAO.save(reply);
         return reply;
 
@@ -73,9 +76,10 @@ public class MessageService {
      * @param postId  the root post being replied to
      * @param replyId the reply that is being replied to
      * @param message the reply
+     * @param replyUserName
      * @return the unique id associated with the reply
      */
-    public Reply replyToReply(@NonNull final String postId, @NonNull final String replyId, @NonNull final String message) {
+    public Reply replyToReply(@NonNull final String postId, @NonNull final String replyId, @NonNull final String message, Optional<String> replyUserName) {
         Validate.notEmpty(replyId, "Reply id of parent reply can not be null or empty");
         Validate.notEmpty(message, "Message can not be null or empty");
         final Reply parentReply = replyDAO.getReply(postId, replyId);
@@ -86,6 +90,7 @@ public class MessageService {
         reply.setRootMessageId(parentReply.getRootMessageId());
         reply.setMessage(message);
         reply.setMessageDepth(parentReply.getMessageDepth() + 1);
+        reply.setUserName(replyUserName.orElseGet(() -> "anonymous"));
         replyDAO.save(reply);
         return reply;
     }

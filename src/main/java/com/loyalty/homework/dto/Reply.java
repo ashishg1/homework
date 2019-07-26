@@ -18,6 +18,8 @@ public class Reply extends Message {
 
     private int messageDepth = 1;
 
+    private String userName = "";
+
     public Reply(String rootMessageId) {
         this.rootMessageId = rootMessageId;
     }
