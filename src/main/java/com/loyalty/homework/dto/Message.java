@@ -16,4 +16,5 @@ public abstract class Message {
     private String messageId = System.currentTimeMillis() + UUID.randomUUID().toString();
 
     private String message;
+
 }

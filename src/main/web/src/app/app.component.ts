@@ -17,15 +17,43 @@ export class AppComponent {
      }
 
     ngOnInit() {
+      this.responses = [];
     }
 
-    saveMessage() {
-      this.httpClientService.saveMessage(this.userName, this.message).subscribe(
+    post() {
+
+      if (!this.message){
+      this.httpClientService.getAllPosts(this.userName).subscribe(
+              data => {
+                console.log(data);
+                this.responses = data;
+              },
+                error => { console.log(error);
+              });
+      } else {
+      this.httpClientService.post(this.userName, this.message).subscribe(
         data => {
           console.log(data);
-          this.responses = data;
+          this.responses.unshift(data);
         },
           error => { console.log(error);
-        })
+        });
+       }
+      }
+
+      replyToPost(messageId) {
+        this.httpClientService.replyToPost(messageId, "woohoo").subscribe(
+                data => {
+                  console.log(data);
+                },
+                  error => { console.log(error);
+                });
+         this.httpClientService.getAllPosts(this.userName).subscribe(
+               data => {
+                 console.log(data);
+                 this.responses = data;
+               },
+                 error => { console.log(error);
+               });
       }
 }

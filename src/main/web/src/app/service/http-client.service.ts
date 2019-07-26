@@ -11,22 +11,46 @@ export class HttpClientService {
       requestOptions = new RequestOptions();
   constructor(private http:Http) {
  }
-	saveMessage(userName,message){
+	post(userName,message){
 	          var h1 = new Headers();
              h1.append('content-type', 'Application/Json');
 
              var requestOptions = new RequestOptions();
              requestOptions.headers = h1;
-             
-             // Here you need to enter Url of your REST API for Post action
-             var Url="http://localhost:8080/api/v1/saveMessage";
+
+             var Url="http://localhost:8080/api/v1/users/"+ userName + "/post";
            
 
             return this.http.post(Url,
-             JSON.stringify({userName: userName, message: message})
+             message
              , requestOptions).map((response: Response) => {
-                console.log(response.json().message);
                 return response.json();
              })
 	}
+
+	getAllPosts(userName){
+               var Url="http://localhost:8080/api/v1/users/"+ userName + "/posts";
+
+              return this.http.get(Url).map((response: Response) => {
+                  return response.json();
+               });
+  	}
+
+
+  replyToPost(postId, message){
+          var h1 = new Headers();
+          h1.append('content-type', 'Application/Json');
+
+          var requestOptions = new RequestOptions();
+          requestOptions.headers = h1;
+
+          var Url="http://localhost:8080/api/v1/posts/"+ postId + "/reply";
+
+
+         return this.http.post(Url,
+          message
+          , requestOptions).map((response: Response) => {
+             return response.json();
+          })
+    	}
 }

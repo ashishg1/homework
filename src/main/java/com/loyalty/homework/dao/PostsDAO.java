@@ -13,7 +13,7 @@ public class PostsDAO extends DynamoDAO<Post> {
     }
 
     public List<Post> getAllPosts(final String user) {
-        return super.getAll(Post.class, "userName,messageId,message,messageDepth", new Post(user));
+        return super.getAll(Post.class, "userName,messageId,message,messageDepth", new Post(user), false);
     }
 
     public Post getPost(String userName, String postId) {

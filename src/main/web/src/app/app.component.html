@@ -1,10 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<form (ngSubmit)="saveMessage()" #f="ngForm">
-  <input type="text" name="userName" [(ngModel)]="userName">
-  <input type="text" name="message" [(ngModel)]="message">
-  <input type="submit" class="btn btn-primary" value="Done">
+<form (ngSubmit)="post()" #f="ngForm">
+  <div style="margin-left: 10px;">
+    <label style="margin-right: 10px;" for="userName">User Name</label>
+    <input type="text" id="userName" name="userName" [(ngModel)]="userName">
+  </div>
+  <br>
+  <div style="margin-left: 10px;">
+    <label style="margin-right: 10px;" for="message">Message</label>
+    <input type="text" id="message" name="message" [(ngModel)]="message">
+  </div>
+  <br>
+  <div style="margin-left: 10px;">
+    <input type="submit" class="btn btn-primary" value="Post/Load">
+  </div>
 </form>
-<br>
-<dl>
-  <dd *ngFor="let response of responses">{{response.message}}</dd>
-</dl>
+
+<p style="margin-left: 10px;">Responses</p>
+<hr>
+
+<p *ngFor="let response of responses">{{response.message}}&nbsp;
+  <button (click)="replyToPost(response.messageId)">Reply</button>
+</p>
+

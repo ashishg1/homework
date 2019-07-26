@@ -14,6 +14,4 @@ public class Post extends Message {
 
     @DynamoDBHashKey
     private String userName;
-
-
 }

@@ -54,7 +54,7 @@ public abstract class DynamoDAO<R> {
         return r != null ? r : defaultValue;
     }
 
-    <T> List<T> getAll(Class<T> clazz, final String project, final T id) {
+    <T> List<T> getAll(Class<T> clazz, final String project, final T id, boolean ascending) {
         initDBMapper();
         final DynamoDBMapperConfig.Builder builder = dbSupplier.getConfigBuilder();
         if (id == null) {
@@ -67,6 +67,7 @@ public abstract class DynamoDAO<R> {
                     new DynamoDBQueryExpression<T>()
                             .withConsistentRead(true)
                             .withHashKeyValues(id)
+                            .withScanIndexForward(ascending)
                             .withProjectionExpression(project), builder.build());
         }
     }
