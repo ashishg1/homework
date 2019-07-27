@@ -5,7 +5,6 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.loyalty.homework.db.DBSupplier;
 import com.loyalty.homework.db.DynamoDBLiveFixture;
 import com.loyalty.homework.db.DynamoDBOperations;
-import com.loyalty.homework.services.CityService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -42,8 +41,6 @@ public class SpringBootApp {
             LOGGER.info("Creating Tables");
             new DynamoDBOperations(new DBSupplier()).createTables(false);
             LOGGER.info("DynamoDB Set up");
-            //Load cities
-            CityService.loadCities();
         }
 
     }

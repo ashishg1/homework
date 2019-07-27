@@ -1,10 +1,10 @@
 package com.loyalty.homework.dto;
 
 
-import com.loyalty.homework.services.CityService;
+import lombok.AllArgsConstructor;
 import lombok.Setter;
 
-
+@AllArgsConstructor
 public class City {
 
     @Setter
@@ -16,9 +16,10 @@ public class City {
     @Setter
     private String longitude;
 
+    @Setter
     private String curTemp;
 
     public String toString() {
-        return "[" + city + " - lat:" + latitude + " lon:" + longitude + " - Temp:" + CityService.getLiveTemperature(city) + "]";
+        return "[" + city + " - lat:" + latitude + " lon:" + longitude + " - Temp:" + curTemp + "]";
     }
 }

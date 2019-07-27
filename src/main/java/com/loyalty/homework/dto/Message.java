@@ -32,11 +32,7 @@ public abstract class Message {
             return "";
         } else {
             final City city = CityService.getCity(this.city);
-            if (city == null) {
-                return "[" + this.city + "]";
-            } else {
-                return city.toString();
-            }
+            return city.toString();
         }
     }
 }
