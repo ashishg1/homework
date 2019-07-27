@@ -6,21 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudformation/deployEnv.bat" beforeDir="false" afterPath="$PROJECT_DIR$/cloudformation/deployEnv.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudformation/ebs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudformation/ebs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/util/CityLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,26 +28,105 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="306">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudformation/ebs.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudformation/deployEnv.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="173" selection-start-line="6" selection-start-column="173" selection-end-line="6" selection-end-column="173" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudformation/codebuild.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.592/aws-java-sdk-dynamodb-1.11.592-sources.jar!/com/amazonaws/services/dynamodbv2/AmazonDynamoDBClientBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#1983#1984#0" expanded="true" />
+                <element signature="e#2039#2040#0" expanded="true" />
+                <element signature="e#2380#2381#0" expanded="true" />
+                <element signature="e#2424#2425#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.592/aws-java-sdk-dynamodb-1.11.592-sources.jar!/com/amazonaws/services/dynamodbv2/AmazonDynamoDBClientConfigurationFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-core/1.11.592/aws-java-sdk-core-1.11.592-sources.jar!/com/amazonaws/client/builder/AwsSyncClientBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+              <folding>
+                <element signature="e#1490#1491#0" expanded="true" />
+                <element signature="e#1532#1533#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="145" column="28" lean-forward="true" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="623">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,6 +162,8 @@
       <find>JSON</find>
       <find>.exists()</find>
       <find>LOGG</find>
+      <find>Hello World</find>
+      <find>EBServicePolicy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,8 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/template.yml" />
-        <option value="$PROJECT_DIR$/deploy.bat" />
         <option value="$PROJECT_DIR$/delete-all.bat" />
         <option value="$PROJECT_DIR$/deploy-all.bat" />
         <option value="$PROJECT_DIR$/codepipeline.yml" />
@@ -131,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DBSupplier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/MessageDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBFixture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBLocalFixture.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/User.java" />
@@ -145,11 +212,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityLoader.java" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" />
@@ -158,6 +223,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java" />
+        <option value="$PROJECT_DIR$/cloudformation/deployEnv.bat" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" />
+        <option value="$PROJECT_DIR$/cloudformation/ebs.yml" />
       </list>
     </option>
   </component>
@@ -224,6 +294,11 @@
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="cloudformation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
@@ -316,6 +391,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -385,6 +468,17 @@
               <item name="homework" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -412,21 +506,22 @@
       <recent name="com.loyalty.homework" />
       <recent name="com.loyalty.homework.controllers" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ashis\IdeaProjects\homework\target" />
+      <recent name="C:\Users\ashis\IdeaProjects\homework\cloudformation" />
+      <recent name="C:\Users\ashis\IdeaProjects\homework" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.loyalty.homework.services" />
       <recent name="com.loyalty.homework.db" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ashis\IdeaProjects\homework" />
       <recent name="C:\Users\ashis\IdeaProjects\homework\src\main\resources" />
       <recent name="C:\Users\ashis\IdeaProjects\homework\src\main\java\com\loyalty\homework\db" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ashis\IdeaProjects\homework\cloudformation" />
-      <recent name="C:\Users\ashis\IdeaProjects\homework" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,7 +536,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.loyalty.homework in homework">
+  <component name="RunManager" selected="JAR Application.homework-1.0-SNAPSHOT.jar">
     <configuration name="SpringBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.SpringBootApp" />
       <module name="homework" />
@@ -451,21 +546,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MessageServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.loyalty.homework.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.loyalty.homework.services" />
-      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.services.MessageServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -515,20 +595,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="homework-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/homework-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.SpringBootApp" />
-      <item itemvalue="JUnit.MessageServiceTest" />
       <item itemvalue="JUnit.RestApiControllerTest" />
       <item itemvalue="JUnit.RestApiControllerTest.testPostIsSaved" />
       <item itemvalue="JUnit.com.loyalty.homework in homework" />
+      <item itemvalue="JAR Application.homework-1.0-SNAPSHOT.jar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.homework-1.0-SNAPSHOT.jar" />
         <item itemvalue="JUnit.com.loyalty.homework in homework" />
         <item itemvalue="JUnit.RestApiControllerTest" />
         <item itemvalue="JUnit.RestApiControllerTest.testPostIsSaved" />
         <item itemvalue="Application.SpringBootApp" />
-        <item itemvalue="JUnit.MessageServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -711,16 +795,31 @@
       <option name="project" value="LOCAL" />
       <updated>1564117846256</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Step 7: Previous Tests passing. Minimum functionality working">
+      <created>1564187580311</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1564187580311</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Remove branch info">
+      <created>1564190701060</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1564190701060</updated>
+    </task>
+    <task id="LOCAL-00027" summary="remove localhost info">
+      <created>1564190766724</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1564190766724</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestApiControllerTest_testReplyToPostIsSaved - 2019.07.25 at 21h 24m 39s.xml">
-      <configuration name="RestApiControllerTest.testReplyToPostIsSaved" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestApiControllerTest_testReplyToPostIsSaved - 2019.07.25 at 21h 28m 17s.xml">
-      <configuration name="RestApiControllerTest.testReplyToPostIsSaved" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestApiControllerTest_testReplyToPostIsSaved - 2019.07.25 at 21h 29m 43s.xml">
       <configuration name="RestApiControllerTest.testReplyToPostIsSaved" configurationId="JUnit" />
     </history-entry>
@@ -745,12 +844,18 @@
     <history-entry file="RestApiControllerTest_testPostIsSaved - 2019.07.26 at 20h 30m 11s.xml">
       <configuration name="RestApiControllerTest.testPostIsSaved" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RestApiControllerTest - 2019.07.26 at 20h 31m 07s.xml">
+      <configuration name="RestApiControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_loyalty_homework_in_homework - 2019.07.26 at 20h 31m 39s.xml">
+      <configuration name="com.loyalty.homework in homework" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -759,14 +864,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39222223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39222223" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32777777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Statistic" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32444444" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32444444" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -774,11 +879,11 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49725777" visible="true" weight="0.22707888" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49671054" visible="true" weight="0.22707888" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.50274223" side_tool="true" visible="true" weight="0.22707888" />
+      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.50328946" side_tool="true" visible="true" weight="0.22707888" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -805,7 +910,10 @@
     <MESSAGE value="Step 5+6: Add Integration tests and make things work a bit better" />
     <MESSAGE value="Step 5+6: Adding angular replies" />
     <MESSAGE value="Step 5+6: Indenting working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 5+6: Indenting working" />
+    <MESSAGE value="Step 7: Previous Tests passing. Minimum functionality working" />
+    <MESSAGE value="Remove branch info" />
+    <MESSAGE value="remove localhost info" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove localhost info" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -869,34 +977,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/message/message.component.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/message/message.component.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/message/message.component.spec.ts" />
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/message/message.component.ts" />
-    <entry file="file://$PROJECT_DIR$/target/classes/resources/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/browserslist">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -970,13 +1050,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1099,13 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1146,13 +1212,6 @@
             <element signature="n#style#0;n#label#2;n#div#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="221" column="58" selection-start-line="221" selection-start-column="58" selection-end-line="221" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1228,10 +1287,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudformation/createApplication.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#720#721#0" expanded="true" />
@@ -1240,13 +1319,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-core/1.11.592/aws-java-sdk-core-1.11.592-sources.jar!/com/amazonaws/client/builder/AwsSyncClientBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="173">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.592/aws-java-sdk-dynamodb-1.11.592-sources.jar!/com/amazonaws/services/dynamodbv2/AmazonDynamoDBClientConfigurationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.592/aws-java-sdk-dynamodb-1.11.592-sources.jar!/com/amazonaws/services/dynamodbv2/AmazonDynamoDBClientBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+          <folding>
+            <element signature="e#1983#1984#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2380#2381#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudformation/deployEnv.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="173" selection-start-line="6" selection-start-column="173" selection-end-line="6" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudformation/codebuild.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudformation/ebs.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="145" column="28" lean-forward="true" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="50" />
         </state>
       </provider>
     </entry>

@@ -15,6 +15,58 @@ Resources:
       SourceBundle:
         S3Bucket: !Sub '${ProjectName}bucketcodedeploy'
         S3Key: app.zip
+
+  s3access:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: s3access
+      Path: /
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - sts:AssumeRole
+            Principal:
+              Service:
+                - ec2.amazonaws.com
+
+  EBServicePolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: EBServicePolicy
+      Roles:
+        - !Ref s3access
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - s3:*
+            Resource:
+              - "*"
+
+  DynamoDBPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: "MyDynamoDBAccess"
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Action:
+              - 'dynamodb:*'
+            Resource:
+              - !Sub "arn:aws:dynamodb:*:*:*"
+      Roles: !Ref s3access
+
+  s3AccessProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      InstanceProfileName: s3access-profile
+      Path: /
+      Roles:
+        - !Ref s3access
+
   HomeworkConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
     Properties:
@@ -30,6 +82,9 @@ Resources:
         - Namespace: aws:elasticbeanstalk:environment
           OptionName: EnvironmentType
           Value: LoadBalanced
+        - Namespace: aws:autoscaling:launchconfiguration
+          OptionName: IamInstanceProfile
+          Value: !Ref s3AccessProfile
       SolutionStackName:  64bit Amazon Linux 2018.03 v2.12.14 running Docker 18.06.1-ce
   HomeworkEnvironment:
     Type: AWS::ElasticBeanstalk::Environment
