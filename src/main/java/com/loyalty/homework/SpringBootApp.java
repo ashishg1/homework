@@ -43,7 +43,7 @@ public class SpringBootApp {
             new DynamoDBOperations(new DBSupplier()).createTables(false);
             LOGGER.info("DynamoDB Set up");
             //Load cities
-            CityService.getCity("");
+            CityService.loadCities();
         }
 
     }

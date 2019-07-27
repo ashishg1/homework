@@ -26,10 +26,9 @@ public final class CityService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CityService.class);
 
-
     private static final Map<String, City> cityMap = Maps.newConcurrentMap();
 
-    static {
+    public static void loadCities() {
         try (final InputStream inputStream = getCityFileAsInputStream()) {
             final JSONArray jsonArray = (JSONArray) new JSONParser().parse(new InputStreamReader(inputStream));
             jsonArray
