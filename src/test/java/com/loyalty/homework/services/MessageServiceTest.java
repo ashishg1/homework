@@ -14,7 +14,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
-import java.util.Optional;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -53,14 +52,18 @@ public class MessageServiceTest {
 
     @Test
     public void testPostReturnsValidPost() {
-        final Post post = messageService.post("ashish", "new message");
+        final Post postToSet = new Post();
+        postToSet.setMessage("new message");
+        final Post post = messageService.post("ashish", postToSet);
         assertThat("userName is not valid", post.getUserName(), is("ashish"));
         assertThat("message is not valid", post.getMessage(), is("new message"));
     }
 
     @Test
     public void testReplyReturnsValidReply() {
-        final Reply reply = messageService.replyToPost("ashish", "new message", Optional.empty());
+        final Reply replyToSet = new Reply();
+        replyToSet.setMessage("new message");
+        final Reply reply = messageService.replyToPost("ashish", replyToSet);
         assertThat("root id is wrong", reply.getRootMessageId(), is("ashish"));
         assertThat("message is not valid", reply.getMessage(), is("new message"));
         assertThat("message is not valid", reply.getMessageDepth(), is(1));
@@ -68,7 +71,9 @@ public class MessageServiceTest {
 
     @Test
     public void testReplyToReplyReturnsValidReply() {
-        final Reply reply = messageService.replyToReply("ashishPost", "ashishReply", "new message", Optional.empty());
+        final Reply replyToSet = new Reply();
+        replyToSet.setMessage("new message");
+        final Reply reply = messageService.replyToReply("ashishPost", "ashishReply", replyToSet);
         assertThat("root id is wrong", reply.getRootMessageId(), is("ashishPost"));
         assertThat("message is not valid", reply.getMessage(), is("new message"));
         assertThat("message is not valid", reply.getMessageDepth(), is(2));
@@ -76,12 +81,16 @@ public class MessageServiceTest {
 
     @Test(expected = IllegalStateException.class)
     public void testReplyToReplyThrowsExceptionWithInvalidPost() {
-        messageService.replyToReply("ashisPost", "ashishReply", "new message", Optional.empty());
+        final Reply replyToSet = new Reply();
+        replyToSet.setMessage("new message");
+        messageService.replyToReply("ashisPost", "ashishReply", replyToSet);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testReplyToReplyThrowsExceptionWithInvalidReply() {
-        messageService.replyToReply("ashisPost", "ashishRply", "new message", Optional.empty());
+        final Reply replyToSet = new Reply();
+        replyToSet.setMessage("new message");
+        messageService.replyToReply("ashisPost", "ashishRply", replyToSet);
     }
 
     @Test

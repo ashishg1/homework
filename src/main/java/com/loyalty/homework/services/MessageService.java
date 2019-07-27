@@ -36,37 +36,38 @@ public class MessageService {
      * Service call that creates a root posts and persists it.
      *
      * @param userName The username of the user
-     * @param message  the message to be saved
+     * @param post     the post to be saved
      * @return unique message id associated with the message
      */
-    public Post post(@NonNull final String userName, @NonNull final String message) {
+    public Post post(@NonNull final String userName, @NonNull final Post post) {
         Validate.notEmpty(userName, "User Name can not be null or empty");
-        Validate.notEmpty(message, "Message can not be null or empty");
-        final Post post = new Post();
-        post.setUserName(userName);
-        post.setMessage(message);
-        postsDAO.save(post);
-        return post;
+        Validate.notNull(post, "Post can not be null or empty");
+        final Post postToSave = new Post();
+        postToSave.setUserName(userName);
+        postToSave.setMessage(post.getMessage());
+        postToSave.setCity(post.getCity());
+        postsDAO.save(postToSave);
+        return postToSave;
     }
 
     /**
      * Service call that creates a reply to a post
      *
-     * @param postId  the post that is being replied to
-     * @param message the reply
-     * @param replyUserName
+     * @param postId the post that is being replied to
+     * @param reply  the reply
      * @return the new unique id associated with the reply
      */
-    public Reply replyToPost(@NonNull final String postId, @NonNull final String message, Optional<String> replyUserName) {
+    public Reply replyToPost(@NonNull final String postId, @NonNull final Reply reply) {
         Validate.notEmpty(postId, "Post id of post can not be null or empty");
-        Validate.notEmpty(message, "Message can not be null or empty");
-        final Reply reply = new Reply();
-        reply.setRootMessageId(postId);
-        reply.setMessage(message);
-        reply.setMessageDepth(1);
-        reply.setUserName(replyUserName.orElseGet(() -> "anonymous"));
-        replyDAO.save(reply);
-        return reply;
+        Validate.notNull(reply, "Reply can not be null or empty");
+        final Reply replyToSave = new Reply();
+        replyToSave.setRootMessageId(postId);
+        replyToSave.setMessage(reply.getMessage());
+        replyToSave.setMessageDepth(1);
+        replyToSave.setCity(reply.getCity());
+        replyToSave.setUserName(reply.getUserName() == null || reply.getUserName().trim().isEmpty() ? "anoymous" : reply.getUserName());
+        replyDAO.save(replyToSave);
+        return replyToSave;
 
     }
 
@@ -75,24 +76,24 @@ public class MessageService {
      *
      * @param postId  the root post being replied to
      * @param replyId the reply that is being replied to
-     * @param message the reply
-     * @param replyUserName
+     * @param reply   the reply
      * @return the unique id associated with the reply
      */
-    public Reply replyToReply(@NonNull final String postId, @NonNull final String replyId, @NonNull final String message, Optional<String> replyUserName) {
+    public Reply replyToReply(@NonNull final String postId, @NonNull final String replyId, @NonNull final Reply reply) {
         Validate.notEmpty(replyId, "Reply id of parent reply can not be null or empty");
-        Validate.notEmpty(message, "Message can not be null or empty");
+        Validate.notNull(reply, "Reply can not be null or empty");
         final Reply parentReply = replyDAO.getReply(postId, replyId);
         if (parentReply == null) {
             throw new IllegalStateException("Something very wrong the parent reply does not exist: " + replyId);
         }
-        final Reply reply = new Reply();
-        reply.setRootMessageId(parentReply.getRootMessageId());
-        reply.setMessage(message);
-        reply.setMessageDepth(parentReply.getMessageDepth() + 1);
-        reply.setUserName(replyUserName.orElseGet(() -> "anonymous"));
-        replyDAO.save(reply);
-        return reply;
+        final Reply replyToSave = new Reply();
+        replyToSave.setRootMessageId(postId);
+        replyToSave.setMessage(reply.getMessage());
+        replyToSave.setMessageDepth(parentReply.getMessageDepth() + 1);
+        replyToSave.setCity(reply.getCity());
+        replyToSave.setUserName(reply.getUserName() == null || reply.getUserName().trim().isEmpty() ? "anoymous" : reply.getUserName());
+        replyDAO.save(replyToSave);
+        return replyToSave;
     }
 
     /**
@@ -130,5 +131,9 @@ public class MessageService {
         if (allReplies != null) {
             messages.addAll(allReplies);
         }
+    }
+
+    public Post getNextPost(final String user, final Optional<String> postId) {
+        throw new UnsupportedOperationException("This operation has yet to be built");
     }
 }

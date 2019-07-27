@@ -1,8 +1,9 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <form (ngSubmit)="post()" #f="ngForm">
   <div style="margin-left: 10px;">
     <label style="margin-right: 10px;" for="userName">Poster's User Name</label>
     <input type="text" id="userName" name="userName" [(ngModel)]="userName">
+    <label style="margin-left: 20px;margin-right: 10px;" for="city">Your City</label>
+    <input type="text" id="city" name="city" [(ngModel)]="city" placeholder="Toronto,CA">
     <label style="margin-left: 20px;margin-right: 10px;" for="message">Post/Reply Text</label>
     <input type="text" id="message" name="message" [(ngModel)]="message">
     <label style="margin-left: 20px;margin-right: 10px;" for="replyUserName">Replier's Username (Optional)</label>
@@ -15,7 +16,6 @@
 <hr>
 
 <p [ngStyle]="{'margin-left':(response.messageDepth * 20)+'px'}" *ngFor="let response of responses;">
-  {{response.message}}&nbsp; - {{response.userName}}
+  {{response.message}}&nbsp; - {{response.userName}} - {{response.cityDetails}}
   <button (click)="reply(response.messageId, response.rootMessageId)" onclick="message.value = '';">Reply</button>
 </p>
-

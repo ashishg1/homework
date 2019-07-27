@@ -14,6 +14,7 @@ export class AppComponent {
   errorMessage: string;
   replyUserName: string;
   responses: Array<any>;
+  city:string;
 
   constructor(private httpClientService: HttpClientService) {
   }
@@ -28,7 +29,7 @@ export class AppComponent {
       if (!this.message) {
         this.loadAllPosts();
       } else {
-        this.httpClientService.post(this.userName, this.message).subscribe(
+        this.httpClientService.post(this.userName, this.message, this.city).subscribe(
           data => {
             this.responses.unshift(data);
           },
@@ -47,7 +48,7 @@ export class AppComponent {
     var localResponses = this.responses;
     if (this.message) {
       if (!rootMessageId) {
-        this.httpClientService.replyToPost(messageId, message, this.replyUserName).subscribe(
+        this.httpClientService.replyToPost(messageId, message, this.replyUserName, this.city).subscribe(
           data => {
             var index = this.findIndexForPostReply(messageId, localResponses);
             this.responses.splice(index + 1, 0, data);
@@ -56,7 +57,7 @@ export class AppComponent {
             console.log(error);
           });
       } else {
-        this.httpClientService.replyToReply(rootMessageId, messageId, message, this.replyUserName).subscribe(
+        this.httpClientService.replyToReply(rootMessageId, messageId, message, this.replyUserName, this.city).subscribe(
           data => {
             var index = this.findIndexForReply(messageId, localResponses);
             this.responses.splice(index + 1, 0, data);
@@ -109,4 +110,5 @@ export class AppComponent {
     this.message = "";
     this.errorMessage = "";
   }
+
 }

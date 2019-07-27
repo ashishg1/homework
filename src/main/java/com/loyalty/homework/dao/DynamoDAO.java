@@ -54,7 +54,7 @@ public abstract class DynamoDAO<R> {
         return r != null ? r : defaultValue;
     }
 
-    <T> List<T> getAll(Class<T> clazz, final String project, final T id, boolean ascending) {
+    <T> List<T> getAll(Class<T> clazz, final String project, final T id, final boolean ascending) {
         initDBMapper();
         final DynamoDBMapperConfig.Builder builder = dbSupplier.getConfigBuilder();
         if (id == null) {

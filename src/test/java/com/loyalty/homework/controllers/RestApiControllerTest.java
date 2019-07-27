@@ -28,6 +28,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ActiveProfiles("Integration")
 public class RestApiControllerTest {
 
+    private static final String TEST_POST = "{\"message\":\"Test Post\",\"city\":\"Toronto,CA\",\"userName\":\"ashish\"}";
+    private static final String TEST_REPLY1 = "{\"message\":\"Test Post Reply\",\"userName\":\"shubha\",\"city\":\"Toronto,CA\"}";
+    private static final String TEST_REPLY2 = "{\"message\":\"Test Reply Reply\",\"userName\":\"shubha\",\"city\":\"Toronto,CA\"}";
+
     @Autowired
     private MockMvc mvc;
 
@@ -41,7 +45,7 @@ public class RestApiControllerTest {
     @Test
     public void testPostIsSaved() throws Exception {
         new DynamoDBOperations(new DBSupplier()).createTables(true);
-        final MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").content("Test Post"))
+        final MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("userName", is("ashish")))
                 .andExpect(jsonPath("message", is("Test Post")))
@@ -49,8 +53,7 @@ public class RestApiControllerTest {
 
         final JSONObject jsonObject = (JSONObject) new JSONParser().parse(mvcResult.getResponse().getContentAsString());
 
-
-        mvc.perform(get("/api/v1/users/ashish/posts/" + jsonObject.get("messageId")).content("Test Post"))
+        mvc.perform(get("/api/v1/users/ashish/posts/" + jsonObject.get("messageId")))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("$[0].userName", is("ashish")))
                 .andExpect(jsonPath("$[0].messageId", is(jsonObject.get("messageId"))))
@@ -62,7 +65,7 @@ public class RestApiControllerTest {
     public void testReplyToPostIsSaved() throws Exception {
         new DynamoDBOperations(new DBSupplier()).createTables(true);
 
-        MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").content("Test Post"))
+        MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("userName", is("ashish")))
                 .andExpect(jsonPath("message", is("Test Post")))
@@ -70,7 +73,7 @@ public class RestApiControllerTest {
 
         final JSONObject post = (JSONObject) new JSONParser().parse(mvcResult.getResponse().getContentAsString());
 
-        mvcResult = mvc.perform(post("/api/v1/posts/" + post.get("messageId") + "/reply").content("Test Post Reply"))
+        mvcResult = mvc.perform(post("/api/v1/posts/" + post.get("messageId") + "/reply").header("Content-Type", "application/json").content(TEST_REPLY1))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("rootMessageId", is(post.get("messageId"))))
                 .andExpect(jsonPath("message", is("Test Post Reply")))
@@ -79,7 +82,7 @@ public class RestApiControllerTest {
 
         final JSONObject reply = (JSONObject) new JSONParser().parse(mvcResult.getResponse().getContentAsString());
 
-        mvc.perform(get("/api/v1/users/ashish/posts/" + post.get("messageId")).content("Test Post"))
+        mvc.perform(get("/api/v1/users/ashish/posts/" + post.get("messageId")))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("$[0].userName", is("ashish")))
                 .andExpect(jsonPath("$[0].messageId", is(post.get("messageId"))))
@@ -96,7 +99,7 @@ public class RestApiControllerTest {
     public void testReplyToReplyIsSaved() throws Exception {
         new DynamoDBOperations(new DBSupplier()).createTables(true);
 
-        MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").content("Test Post"))
+        MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("userName", is("ashish")))
                 .andExpect(jsonPath("message", is("Test Post")))
@@ -104,7 +107,7 @@ public class RestApiControllerTest {
 
         final JSONObject post = (JSONObject) new JSONParser().parse(mvcResult.getResponse().getContentAsString());
 
-        mvcResult = mvc.perform(post("/api/v1/posts/" + post.get("messageId") + "/reply").content("Test Post Reply"))
+        mvcResult = mvc.perform(post("/api/v1/posts/" + post.get("messageId") + "/reply").header("Content-Type", "application/json").content(TEST_REPLY1))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("rootMessageId", is(post.get("messageId"))))
                 .andExpect(jsonPath("message", is("Test Post Reply")))
@@ -113,7 +116,7 @@ public class RestApiControllerTest {
 
         final JSONObject reply = (JSONObject) new JSONParser().parse(mvcResult.getResponse().getContentAsString());
 
-        mvcResult = mvc.perform(post("/api/v1/posts/" + post.get("messageId") + "/" + reply.get("messageId") + "/reply").content("Test Reply Reply"))
+        mvcResult = mvc.perform(post("/api/v1/posts/" + post.get("messageId") + "/" + reply.get("messageId") + "/reply").header("Content-Type", "application/json").content(TEST_REPLY2))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("rootMessageId", is(post.get("messageId"))))
                 .andExpect(jsonPath("message", is("Test Reply Reply")))
@@ -122,7 +125,7 @@ public class RestApiControllerTest {
 
         final JSONObject reply2 = (JSONObject) new JSONParser().parse(mvcResult.getResponse().getContentAsString());
 
-        mvc.perform(get("/api/v1/users/ashish/posts/" + post.get("messageId")).content("Test Post"))
+        mvc.perform(get("/api/v1/users/ashish/posts/" + post.get("messageId")))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("$[0].userName", is("ashish")))
                 .andExpect(jsonPath("$[0].messageId", is(post.get("messageId"))))

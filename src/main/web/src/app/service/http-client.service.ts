@@ -16,9 +16,10 @@ export class HttpClientService {
     this.baseUrl = "http://localhost:8080/api/v1/";
   }
 
-  post(userName, message) {
+  post(userName, message, city) {
     var Url = "users/" + userName + "/post";
-    return this.makeHttpPost(Url, message);
+    var json = JSON.stringify({message:message,city:city,userName:userName});
+    return this.makeHttpPost(Url, json);
   }
 
   getAllPosts(userName) {
@@ -28,23 +29,22 @@ export class HttpClientService {
     });
   }
 
-
-  replyToPost(postId, message, replyUserName) {
-    var Url = "posts/" + postId + "/reply" + (replyUserName ? "?replyUserName=" + replyUserName : "");
-
-    return this.makeHttpPost(Url, message);
+  replyToPost(postId, message, replyUserName, city) {
+    var Url = "posts/" + postId + "/reply"
+    var json = JSON.stringify({message:message,userName:replyUserName,city:city});
+    return this.makeHttpPost(Url, json);
   }
 
-  replyToReply(postId, replyId, message, replyUserName) {
-    var Url = "posts/" + postId + "/" + replyId + "/reply" + (replyUserName ? "?replyUserName=" + replyUserName : "");
-
-    return this.makeHttpPost(Url, message);
+  replyToReply(postId, replyId, message, replyUserName, city) {
+    var Url = "posts/" + postId + "/" + replyId + "/reply";
+    var json = JSON.stringify({message:message,userName:replyUserName,city:city});
+    return this.makeHttpPost(Url, json);
   }
 
-  private makeHttpPost(Url, message) {
+  private makeHttpPost(Url, json) {
     var requestOptions = HttpClientService.getRequestOptions();
     return this.http.post(this.baseUrl + Url,
-      message
+      json
       , requestOptions).map((response: Response) => {
       return response.json();
     })

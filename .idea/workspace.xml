@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/web/src/app/app.module.ts" line="16" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/util/CityLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,122 +39,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="623">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.html">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="e#749#755#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="233">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="45" column="85" lean-forward="true" selection-start-line="45" selection-start-column="85" selection-end-line="45" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="115" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -155,8 +69,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -179,6 +93,7 @@
       <find>of</find>
       <find>JSON</find>
       <find>.exists()</find>
+      <find>LOGG</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,10 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApplication.java" />
-        <option value="$PROJECT_DIR$/template.yaml" />
-        <option value="$PROJECT_DIR$/buildspec.yml" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/template.yml" />
         <option value="$PROJECT_DIR$/deploy.bat" />
         <option value="$PROJECT_DIR$/delete-all.bat" />
@@ -223,25 +134,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBLocalFixture.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBOperations.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/web/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/util/CityLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" />
       </list>
     </option>
   </component>
@@ -473,8 +389,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -497,6 +413,7 @@
       <recent name="com.loyalty.homework.controllers" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.loyalty.homework.services" />
       <recent name="com.loyalty.homework.db" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -524,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SpringBootApp">
+  <component name="RunManager" selected="JUnit.com.loyalty.homework in homework">
     <configuration name="SpringBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.SpringBootApp" />
       <module name="homework" />
@@ -534,6 +451,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loyalty.homework.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.loyalty.homework.services" />
+      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.services.MessageServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -569,52 +501,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestApiControllerTest.testReplyToPostIsSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.loyalty.homework in homework" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.loyalty.homework.controllers.*" />
+          <option name="PATTERN" value="com.loyalty.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.loyalty.homework.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.controllers.RestApiControllerTest" />
-      <option name="METHOD_NAME" value="testReplyToPostIsSaved" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestApiControllerTest.testReplyToReplyIsSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.loyalty.homework.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.loyalty.homework.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.controllers.RestApiControllerTest" />
-      <option name="METHOD_NAME" value="testReplyToReplyIsSaved" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.loyalty.homework" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.SpringBootApp" />
+      <item itemvalue="JUnit.MessageServiceTest" />
       <item itemvalue="JUnit.RestApiControllerTest" />
       <item itemvalue="JUnit.RestApiControllerTest.testPostIsSaved" />
-      <item itemvalue="JUnit.RestApiControllerTest.testReplyToPostIsSaved" />
-      <item itemvalue="JUnit.RestApiControllerTest.testReplyToReplyIsSaved" />
-      <item itemvalue="Application.SpringBootApp" />
+      <item itemvalue="JUnit.com.loyalty.homework in homework" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SpringBootApp" />
-        <item itemvalue="JUnit.RestApiControllerTest.testReplyToReplyIsSaved" />
-        <item itemvalue="JUnit.RestApiControllerTest.testReplyToPostIsSaved" />
-        <item itemvalue="JUnit.RestApiControllerTest.testPostIsSaved" />
+        <item itemvalue="JUnit.com.loyalty.homework in homework" />
         <item itemvalue="JUnit.RestApiControllerTest" />
+        <item itemvalue="JUnit.RestApiControllerTest.testPostIsSaved" />
+        <item itemvalue="Application.SpringBootApp" />
+        <item itemvalue="JUnit.MessageServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -783,19 +697,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564104951384</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Step 5+6: Adding angular replies">
+      <created>1564114670966</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1564114670967</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Step 5+6: Indenting working">
+      <created>1564117846256</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1564117846256</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestApiControllerTest_testReplyToPostIsSaved - 2019.07.25 at 21h 21m 22s.xml">
-      <configuration name="RestApiControllerTest.testReplyToPostIsSaved" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestApiControllerTest_testReplyToPostIsSaved - 2019.07.25 at 21h 22m 55s.xml">
-      <configuration name="RestApiControllerTest.testReplyToPostIsSaved" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestApiControllerTest_testReplyToPostIsSaved - 2019.07.25 at 21h 23m 52s.xml">
-      <configuration name="RestApiControllerTest.testReplyToPostIsSaved" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestApiControllerTest_testReplyToPostIsSaved - 2019.07.25 at 21h 24m 39s.xml">
       <configuration name="RestApiControllerTest.testReplyToPostIsSaved" configurationId="JUnit" />
     </history-entry>
@@ -817,12 +736,21 @@
     <history-entry file="RestApiControllerTest_testReplyToReplyIsSaved - 2019.07.25 at 21h 34m 19s.xml">
       <configuration name="RestApiControllerTest.testReplyToReplyIsSaved" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MessageServiceTest - 2019.07.26 at 20h 15m 04s.xml">
+      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiControllerTest - 2019.07.26 at 20h 28m 20s.xml">
+      <configuration name="RestApiControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestApiControllerTest_testPostIsSaved - 2019.07.26 at 20h 30m 11s.xml">
+      <configuration name="RestApiControllerTest.testPostIsSaved" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23720682" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -831,8 +759,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39222223" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39222223" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32777777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -842,15 +770,15 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.5009141" side_tool="true" visible="true" weight="0.22707888" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49908593" visible="true" weight="0.22707888" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49725777" visible="true" weight="0.22707888" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.50274223" side_tool="true" visible="true" weight="0.22707888" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -875,24 +803,26 @@
     <MESSAGE value="Step 3: Use DTO and jsons from now on" />
     <MESSAGE value="Step 4: Add DB Layer" />
     <MESSAGE value="Step 5+6: Add Integration tests and make things work a bit better" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 5+6: Add Integration tests and make things work a bit better" />
+    <MESSAGE value="Step 5+6: Adding angular replies" />
+    <MESSAGE value="Step 5+6: Indenting working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 5+6: Indenting working" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java</url>
-          <line>100</line>
+          <line>82</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/homework$MessageServiceTest.ic" NAME="MessageServiceTest Coverage Results" MODIFIED="1564096388063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/homework$MessageServiceTest.ic" NAME="MessageServiceTest Coverage Results" MODIFIED="1564186497956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.loyalty.homework.services.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/homework$MessageServiceTest_testPostReturnsValidId.ic" NAME="MessageServiceTest.testPostReturnsValidId Coverage Results" MODIFIED="1564094571344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -901,6 +831,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>CityService.cityMap</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>CityService.cityMap.get(reply.getCity())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>postsDAO.getP(&quot;ashish&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -929,28 +869,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.8.RELEASE/spring-test-5.1.8.RELEASE-sources.jar!/org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="260" column="41" selection-start-line="260" selection-start-column="41" selection-end-line="260" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.8.RELEASE/spring-test-5.1.8.RELEASE.jar!/org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/2.1.6.RELEASE/spring-boot-actuator-2.1.6.RELEASE.jar!/org/springframework/boot/actuate/metrics/web/servlet/WebMvcTags.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/.gitignore" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -982,13 +900,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/web/browserslist">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBFixtureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBFixtureTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar!/org/apache/commons/lang3/Validate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -1044,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.592/aws-java-sdk-dynamodb-1.11.592-sources.jar!/com/amazonaws/services/dynamodbv2/datamodeling/DynamoDBQueryExpression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1089,30 +994,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/MessageDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/MessageDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
           <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1129,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="221" column="58" selection-start-line="221" selection-start-column="58" selection-end-line="221" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/parser/JSONParser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1143,27 +1022,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/User.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1181,16 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1198,10 +1051,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="187">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1210,22 +1063,165 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="289">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="115" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
+        <state relative-caret-position="272">
+          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#2;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="221" column="58" selection-start-line="221" selection-start-column="58" selection-end-line="221" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+          <folding>
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1234,84 +1230,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="45" column="85" lean-forward="true" selection-start-line="45" selection-start-column="85" selection-end-line="45" selection-end-column="85" />
+        <state relative-caret-position="623">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="233">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="e#749#755#0" expanded="true" />
           </folding>
         </state>
       </provider>

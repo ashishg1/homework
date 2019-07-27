@@ -14,7 +14,7 @@ public class ReplyDAO extends DynamoDAO<Reply> {
 
 
     public List<Reply> getAllReplies(final String messageId) {
-        return super.getAll(Reply.class, "rootMessageId,messageId,message,messageDepth,replyUserName,city", new Reply(messageId), true);
+        return super.getAll(Reply.class, "rootMessageId,messageId,message,messageDepth,userName,city", new Reply(messageId), true);
     }
 
     public Reply getReply(final String postId, final String replyId) {
