@@ -13,7 +13,7 @@ export class HttpClientService {
   requestOptions = new RequestOptions();
 
   constructor(private http: Http) {
-    this.baseUrl = "http://localhost:8080/api/v1/";
+    this.baseUrl = "/api/v1/";
   }
 
   post(userName, message, city) {
