@@ -11,13 +11,16 @@ import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
+/**
+ * The base for Post and Reply
+ */
 @Data
 @NoArgsConstructor
 @DynamoDBDocument
 public abstract class Message {
 
     @DynamoDBRangeKey
-    private String messageId = System.currentTimeMillis() + UUID.randomUUID().toString();
+    private String messageId = System.currentTimeMillis() + "-" + UUID.randomUUID().toString();
 
     private String message;
 
@@ -27,6 +30,12 @@ public abstract class Message {
     @Getter(AccessLevel.NONE)
     private String cityDetails;
 
+    /**
+     * The City details string is automatically transformed on load via the CityService
+     *
+     * @return cityDetails
+     */
+    @SuppressWarnings("unused")
     public String getCityDetails() {
         if (this.city == null || this.city.isEmpty()) {
             return "";

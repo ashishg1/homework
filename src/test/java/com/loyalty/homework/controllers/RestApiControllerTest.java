@@ -6,6 +6,7 @@ import com.loyalty.homework.db.DynamoDBLocalFixture;
 import com.loyalty.homework.db.DynamoDBOperations;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
+@SuppressWarnings("unused")
 @RunWith(SpringRunner.class)
 @WebMvcTest(RestApiController.class)
 @ActiveProfiles("Integration")
@@ -31,20 +33,25 @@ public class RestApiControllerTest {
     private static final String TEST_POST = "{\"message\":\"Test Post\",\"city\":\"Toronto,CA\",\"userName\":\"ashish\"}";
     private static final String TEST_REPLY1 = "{\"message\":\"Test Post Reply\",\"userName\":\"shubha\",\"city\":\"Toronto,CA\"}";
     private static final String TEST_REPLY2 = "{\"message\":\"Test Reply Reply\",\"userName\":\"shubha\",\"city\":\"Toronto,CA\"}";
+    private static final String TEST_POST2 = "{\"message\":\"Test Post 2\",\"city\":\"Toronto,CA\",\"userName\":\"ashish\"}";
 
     @Autowired
     private MockMvc mvc;
 
     @BeforeClass
-    public static void setUp() throws Exception {
+    public static void setUpBeforeClass() {
         final AmazonDynamoDB dynamoDB = new DynamoDBLocalFixture().startDynamoDB();
         DBSupplier.setDynamoDB(dynamoDB, "testEnv");
+    }
+
+    @Before
+    public void setUp() throws Exception {
+        new DynamoDBOperations(new DBSupplier()).createTables(true);
     }
 
 
     @Test
     public void testPostIsSaved() throws Exception {
-        new DynamoDBOperations(new DBSupplier()).createTables(true);
         final MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("userName", is("ashish")))
@@ -62,9 +69,34 @@ public class RestApiControllerTest {
     }
 
     @Test
-    public void testReplyToPostIsSaved() throws Exception {
-        new DynamoDBOperations(new DBSupplier()).createTables(true);
+    public void testNextPostIsRetrieved() throws Exception {
+        mvc.perform(post("/api/v1/users/ashish/post/next").header("Content-Type", "application/json").content(TEST_POST));
+        //TODO: This method should return the next posts. It is not implemented right now.
+    }
 
+    @Test
+    public void testSecondPostIsAboveFirst() throws Exception {
+        mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST))
+                .andExpect(status().is2xxSuccessful())
+                .andExpect(jsonPath("userName", is("ashish")))
+                .andExpect(jsonPath("message", is("Test Post")))
+                .andReturn();
+
+        mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST2))
+                .andExpect(status().is2xxSuccessful())
+                .andExpect(jsonPath("userName", is("ashish")))
+                .andExpect(jsonPath("message", is("Test Post 2")))
+                .andReturn();
+
+        mvc.perform(get("/api/v1/users/ashish/posts"))
+                .andExpect(status().is2xxSuccessful())
+                .andExpect(jsonPath("$[0].message", is("Test Post 2")))
+                .andExpect(jsonPath("$[1].message", is("Test Post")));
+
+    }
+
+    @Test
+    public void testReplyToPostIsSaved() throws Exception {
         MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("userName", is("ashish")))
@@ -97,8 +129,6 @@ public class RestApiControllerTest {
 
     @Test
     public void testReplyToReplyIsSaved() throws Exception {
-        new DynamoDBOperations(new DBSupplier()).createTables(true);
-
         MvcResult mvcResult = mvc.perform(post("/api/v1/users/ashish/post").header("Content-Type", "application/json").content(TEST_POST))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("userName", is("ashish")))

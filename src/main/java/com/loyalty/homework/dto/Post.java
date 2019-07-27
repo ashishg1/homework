@@ -6,6 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * The Post Bean
+ */
+@SuppressWarnings("Lombok")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -17,6 +17,7 @@ import java.util.Optional;
 /**
  * Message service handles all actions associated with handling messages
  */
+@SuppressWarnings("WeakerAccess")
 @Service
 public class MessageService {
 
@@ -39,9 +40,9 @@ public class MessageService {
      * @param post     the post to be saved
      * @return unique message id associated with the message
      */
+    @NonNull
     public Post post(@NonNull final String userName, @NonNull final Post post) {
-        Validate.notEmpty(userName, "User Name can not be null or empty");
-        Validate.notNull(post, "Post can not be null or empty");
+        Validate.notEmpty(userName, "User Name can not be empty");
         final Post postToSave = new Post();
         postToSave.setUserName(userName);
         postToSave.setMessage(post.getMessage());
@@ -57,9 +58,9 @@ public class MessageService {
      * @param reply  the reply
      * @return the new unique id associated with the reply
      */
+    @NonNull
     public Reply replyToPost(@NonNull final String postId, @NonNull final Reply reply) {
-        Validate.notEmpty(postId, "Post id of post can not be null or empty");
-        Validate.notNull(reply, "Reply can not be null or empty");
+        Validate.notEmpty(postId, "Post id of post can not be empty");
         final Reply replyToSave = new Reply();
         replyToSave.setRootMessageId(postId);
         replyToSave.setMessage(reply.getMessage());
@@ -79,9 +80,10 @@ public class MessageService {
      * @param reply   the reply
      * @return the unique id associated with the reply
      */
+    @NonNull
     public Reply replyToReply(@NonNull final String postId, @NonNull final String replyId, @NonNull final Reply reply) {
-        Validate.notEmpty(replyId, "Reply id of parent reply can not be null or empty");
-        Validate.notNull(reply, "Reply can not be null or empty");
+        Validate.notEmpty(postId, "PostId id of post can not be empty");
+        Validate.notEmpty(replyId, "Reply id of parent reply can not be empty");
         final Reply parentReply = replyDAO.getReply(postId, replyId);
         if (parentReply == null) {
             throw new IllegalStateException("Something very wrong the parent reply does not exist: " + replyId);
@@ -90,6 +92,7 @@ public class MessageService {
         replyToSave.setRootMessageId(postId);
         replyToSave.setMessage(reply.getMessage());
         replyToSave.setMessageDepth(parentReply.getMessageDepth() + 1);
+        replyToSave.setMessageId(parentReply.getMessageId() + "_" + replyToSave.getMessageId());
         replyToSave.setCity(reply.getCity());
         replyToSave.setUserName(reply.getUserName() == null || reply.getUserName().trim().isEmpty() ? "anoymous" : reply.getUserName());
         replyDAO.save(replyToSave);
@@ -103,9 +106,15 @@ public class MessageService {
      * @param postId   postId to retrieve
      * @return a list of messages representing post and its replies
      */
+    @NonNull
     public List<Message> getPost(@NonNull final String userName, @NonNull final String postId) {
+        Validate.notEmpty(postId, "PostId id of post can not be empty");
+        Validate.notEmpty(userName, "userName can not be empty");
         final List<Message> messages = Lists.newArrayList();
         final Post post = postsDAO.getPost(userName, postId);
+        if (post == null) {
+            return messages;
+        }
         appendPostToThread(messages, post);
         return messages;
     }
@@ -116,24 +125,33 @@ public class MessageService {
      * @param user the user to retrieve posts for
      * @return list of messages represeting all posts
      */
+    @NonNull
     public List<Message> getAllPosts(@NonNull final String user) {
+        Validate.notEmpty(user, "user name can not be empty");
         final List<Message> messages = Lists.newArrayList();
         final List<Post> posts = postsDAO.getAllPosts(user);
-        if (posts != null) {
-            posts.forEach(post -> appendPostToThread(messages, post));
-        }
+        posts.forEach(post -> appendPostToThread(messages, post));
         return messages;
     }
 
     private void appendPostToThread(final List<Message> messages, final Post post) {
         messages.add(post);
         final List<Reply> allReplies = replyDAO.getAllReplies(post.getMessageId());
-        if (allReplies != null) {
-            messages.addAll(allReplies);
-        }
+        messages.addAll(allReplies);
+
     }
 
-    public Post getNextPost(final String user, final Optional<String> postId) {
+    /**
+     * This service call returns the next posts that are available for a user
+     *
+     * @param user   The user name
+     * @param postId the post id to start from
+     * @param count  the number of posts to return
+     * @return list of posts based on the query
+     */
+    @SuppressWarnings({"OptionalUsedAsFieldOrParameterType", "unused"})
+    @NonNull
+    public List<Post> getNextPost(@NonNull final String user, final Optional<String> postId, final Optional<Integer> count) {
         throw new UnsupportedOperationException("This operation has yet to be built");
     }
 }

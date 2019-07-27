@@ -7,6 +7,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
+/**
+ * The Reply Bean
+ */
+@SuppressWarnings("Lombok")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

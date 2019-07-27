@@ -9,6 +9,7 @@ import {NgForm} from '@angular/forms';
 })
 export class AppComponent {
   title = 'homework';
+  lastUserName:string;
   userName: string;
   message: string;
   errorMessage: string;
@@ -26,7 +27,10 @@ export class AppComponent {
 
   post() {
     if (this.userName) {
-      if (!this.message) {
+      if (!this.lastUserName) {
+        this.lastUserName = this.userName;
+      }
+      if (!this.message || this.lastUserName !== this.userName) {
         this.loadAllPosts();
       } else {
         this.httpClientService.post(this.userName, this.message, this.city).subscribe(
@@ -37,7 +41,10 @@ export class AppComponent {
             console.log(error);
           });
       }
-      this.clear();
+      if (this.lastUserName === this.userName) {
+        this.clear();
+      }
+      this.lastUserName = this.userName;
     } else {
       this.errorMessage = "Please enter a Poster's User Name";
     }
@@ -101,9 +108,23 @@ export class AppComponent {
   }
 
   findIndexForReply(messageId, responses) {
-    return responses.findIndex(function (item, i) {
-      return item.messageId === messageId;
+    var index = -1;
+    var depth = -1;
+    var nextIndex = responses.findIndex(function (item, i) {
+      if (index > -1) {
+        if (item.messageDepth < depth) {
+          return true;
+        } else {
+          index = i;
+        }
+      }
+      if (item.messageId === messageId) {
+        index = i;
+        depth = item.messageDepth + 1;
+      }
+      return false;
     });
+    return nextIndex > -1 ? nextIndex - 1 : index;
   }
 
   clear() {

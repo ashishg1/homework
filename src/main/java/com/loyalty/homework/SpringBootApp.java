@@ -27,15 +27,21 @@ public class SpringBootApp {
     /**
      * Main method that launches the spring boot application
      *
-     * @param args Arguments to be passed in
+     * @param args First argument will be taken as the profile. Pass "Integration" to not setup dynamo on live server
      */
     public static void main(String[] args) throws Exception {
         LOGGER.info("Starting Application");
         final Environment env = SpringApplication.run(SpringBootApp.class, args).getEnvironment();
+        if (args.length > 0) {
+            System.setProperty("spring.profiles.active", args[0]);
+        }
         final boolean integration = Arrays.stream(env.getActiveProfiles()).anyMatch(profile -> profile.contains("Integration"));
         if (!integration) {
             LOGGER.info("This is not an integration enviornment. Attempting to create connection to live DynamodDB");
-            final String currentEnvName = env.getProperty("currentEnvName");
+            String currentEnvName = env.getProperty("currentEnvName");
+            if (currentEnvName == null) {
+                currentEnvName = "homework";
+            }
             final AmazonDynamoDB dynamoDB = new DynamoDBLiveFixture().startDynamoDB();
             DBSupplier.setDynamoDB(dynamoDB, currentEnvName);
             LOGGER.info("Creating Tables");

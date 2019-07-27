@@ -1,21 +1,29 @@
 package com.loyalty.homework.dto;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+/**
+ * City Bean
+ */
+@EqualsAndHashCode
+@NoArgsConstructor
 @AllArgsConstructor
 public class City {
 
+    @Getter
     @Setter
     private String city;
 
+    @Getter
     @Setter
     private String latitude;
 
+    @Getter
     @Setter
     private String longitude;
 
+    @Getter
     @Setter
     private String curTemp;
 
