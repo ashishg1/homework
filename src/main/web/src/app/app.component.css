@@ -48,12 +48,14 @@ input[type=submit] {
   top: 0;
   width: 100%;
   margin-left: 10px;
+  height: 150px;
   background: #FFFFFF;
+  text-align: center;
 }
 
 .posts {
   padding: 16px;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .card {
@@ -67,4 +69,12 @@ input[type=submit] {
   padding-top: 10px;
   padding-bottom: 10px;
   color: DodgerBlue;
+}
+
+.topHeader {
+  padding-bottom: 10px;
+}
+
+#messageText {
+  width: 50%;
 }

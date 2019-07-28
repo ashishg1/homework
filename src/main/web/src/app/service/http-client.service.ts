@@ -13,12 +13,12 @@ export class HttpClientService {
   requestOptions = new RequestOptions();
 
   constructor(private http: Http) {
-    this.baseUrl = "/api/v1/";
+    this.baseUrl = "http://localhost:8080/api/v1/";
   }
 
   post(userName, message, city) {
     var Url = "users/" + userName + "/post";
-    var json = JSON.stringify({message:message,city:city,userName:userName});
+    var json = JSON.stringify({message:message,city:city});
     return this.makeHttpPost(Url, json);
   }
 

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {HttpClientService} from './service/http-client.service';
 import {NgForm} from '@angular/forms';
 
@@ -29,9 +29,11 @@ export class AppComponent {
     if (this.userName) {
       if (!this.lastUserName) {
         this.lastUserName = this.userName;
+        this.loadAllPosts(true);
+        return;
       }
       if (!this.message || this.lastUserName !== this.userName) {
-        this.loadAllPosts();
+        this.loadAllPosts(false);
       } else {
         this.httpClientService.post(this.userName, this.message, this.city).subscribe(
           data => {
@@ -79,10 +81,13 @@ export class AppComponent {
     }
   }
 
-  loadAllPosts() {
+  loadAllPosts(postAfterLoad) {
     this.httpClientService.getAllPosts(this.userName).subscribe(
       data => {
         this.responses = data;
+        if (postAfterLoad) {
+          this.post();
+        }
       },
       error => {
         console.log(error);
