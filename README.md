@@ -1,11 +1,11 @@
 # Homework
 
 This homework project attempts to show how a reddit like forum structure can be implemented. Various design patterns, code style and techniques have been applied in this project to demo a simple yet fairly advanced baseline for similar projects.
-The technologies/lingo used here assumes basic knowledge of Java, Spring, AngularJS and some understanding of AWS.
+The technologies/lingo used here assumes basic knowledge of Java, Spring, AngularJS, Docker and some understanding of AWS.
 
 ## Getting Started
 
-Below you will find instructions on how to setup the project.
+Below you will find instructions on how to setup, test and deploy the project.
 
 
 ### Prerequisites - AWS Config and Credentials
@@ -78,6 +78,7 @@ Then run deploy script to deploy your version of environment. The Name provided 
 
 Once executed the scripts will create stack for CodeBuild. Pull the branch from GitHub and then compile/build and produce artifacts that will then be placed under an s3 bucket.
 The script will then move on to create an Elastic Beanstalk environment under the application you created earlier. All settings are configurable in the ebs cloudformation template.
+The deployment takes place as load balanced Docker containers in EC2 using t1.micro instances that are not in any specific VPC.
 Once deployed the script will print out the url for the application that can be used to directly access the application.
 To delete the stacks please run similar deleteEnv and deleteApplication scripts with same projectName. And the stacks will be fully and automatically removed.
 
@@ -88,7 +89,7 @@ The code on master branch runs on HTTPS however see Secure branch for an example
 ## UI Usage
 
 The following behavior is expected from UI
-* Anyone can post under and username and there is no restriction or authentication
+* Anyone can post under any username and there is no restriction or authentication
 * If a City is provided then it must be in the format of Toronto,CA or Montreal,CA if you wish to see longitude, latitude and current temperature otherwise on city name will appear as provided.
 * If a replier's username is not provided the reply will be posted as anonymous
 * All Posts and Replies use the same text box for simplicity purposes
