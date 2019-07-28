@@ -19,17 +19,4 @@ describe('HttpClientService', () => {
   it('should be created', () => {
     expect(httpClientService).toBeTruthy();
   });
-
-  it('should return what was passed to it', () => {
-      let response;
-      spyOn(httpClientService, 'saveMessage').and.callFake(()=>{
-                                                       return of("something");
-                                                     });
-
-      httpClientService.saveMessage("something").subscribe(res => {
-        response = res;
-      });
-
-      expect(response).toEqual("something");
-    });
 });

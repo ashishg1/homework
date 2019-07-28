@@ -4,35 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/web/src/app/app.module.ts" line="16" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="Code cleanup and some testing. Add backend tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/PostsDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/ReplyDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBOperationsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/CityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/DynamoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/PostsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DBSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DBSupplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBFixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBFixture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBLiveFixture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,50 +27,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBOperationsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/PostsDAOTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/ReplyDAOTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="42" column="69" lean-forward="true" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -101,10 +57,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="187">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#div#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#2;n#div#0;n#form#0;n#!!top" expanded="true" />
@@ -115,49 +70,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Reply.java">
+        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="833">
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/web/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="94" column="66" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
+        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -215,9 +149,7 @@
         <option value="$PROJECT_DIR$/src/main/web/src/app/message/message.component.ts" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/message/message.component.html" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiTest.java" />
-        <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/message/message.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBFixtureTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" />
@@ -229,9 +161,7 @@
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/util/CityLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/MessageServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" />
         <option value="$PROJECT_DIR$/cloudformation/ebs.yml" />
         <option value="$PROJECT_DIR$/cloudformation/deployEnv.bat" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/config/SwaggerConfig.java" />
@@ -252,12 +182,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/MessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java" />
-        <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBOperationsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/PostsDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/ReplyDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" />
       </list>
     </option>
   </component>
@@ -437,6 +371,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="e2e" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="e2e" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -574,7 +525,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in homework">
+  <component name="RunManager" selected="Application.SpringBootApp">
     <configuration name="SpringBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.SpringBootApp" />
       <module name="homework" />
@@ -641,8 +592,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in homework" />
         <item itemvalue="Application.SpringBootApp" />
+        <item itemvalue="JUnit.All in homework" />
         <item itemvalue="JUnit.RestApiControllerTest" />
         <item itemvalue="JUnit.RestApiControllerTest.testReplyToReplyIsSaved" />
         <item itemvalue="JAR Application.homework-1.0-SNAPSHOT.jar" />
@@ -870,13 +821,17 @@
       <option name="project" value="LOCAL" />
       <updated>1564202891352</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Code cleanup and some testing. Add backend tests">
+      <created>1564261423327</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1564261423327</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CityServiceTest_testJSONConversion - 2019.07.27 at 14h 35m 22s.xml">
-      <configuration name="CityServiceTest.testJSONConversion" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CityServiceTest_testJSONConversion - 2019.07.27 at 14h 35m 39s.xml">
       <configuration name="CityServiceTest.testJSONConversion" configurationId="JUnit" />
     </history-entry>
@@ -904,11 +859,15 @@
     <history-entry file="All_in_homework - 2019.07.27 at 16h 02m 31s.xml">
       <configuration name="All in homework" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_homework - 2019.07.27 at 17h 03m 10s.xml">
+      <configuration name="All in homework" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26226014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26226014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -917,16 +876,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.28444445" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.28444445" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.32777777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Statistic" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" />
+      <window_info anchor="bottom" id="Statistic" order="8" sideWeight="0.49946696" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.22" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" visible="true" weight="0.28444445" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026652" side_tool="true" visible="true" weight="0.28444445" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -944,6 +903,7 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="add basic tests" />
     <MESSAGE value="cloudformation docker" />
     <MESSAGE value="buildspec with install version" />
@@ -1043,30 +1003,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/net/SocketInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudformation/createApplication.bat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-core/1.11.592/aws-java-sdk-core-1.11.592-sources.jar!/com/amazonaws/client/builder/AwsSyncClientBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1332,13 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -1356,13 +1285,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1406,27 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#2;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBOperationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1437,24 +1338,82 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/PostsDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/dao/ReplyDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="42" column="69" lean-forward="true" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/loyalty/homework/controllers/RestApiControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="480">
+          <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#2;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>

@@ -1,20 +1,26 @@
-<form (ngSubmit)="post()" #f="ngForm">
-  <div style="margin-left: 10px;">
-    <label style="margin-right: 10px;" for="userName">Poster's User Name</label>
-    <input type="text" id="userName" name="userName" [(ngModel)]="userName">
-    <label style="margin-left: 20px;margin-right: 10px;" for="city">Your City</label>
-    <input type="text" id="city" name="city" [(ngModel)]="city" placeholder="Toronto,CA">
-    <label style="margin-left: 20px;margin-right: 10px;" for="message">Post/Reply Text</label>
-    <input type="text" id="message" name="message" [(ngModel)]="message">
-    <label style="margin-left: 20px;margin-right: 10px;" for="replyUserName">Replier's Username (Optional)</label>
-    <input type="text" id="replyUserName" name="replyUserName" [(ngModel)]="replyUserName">
-    <input style="margin-left: 20px;" type="submit" class="btn btn-primary" value="Post a New Message / Re-Load Posts" onclick="message.value = '';">
+<div>
+  <div class="header">
+    <form (ngSubmit)="post();message.value = '';" #f="ngForm">
+      <label style="margin-right: 10px;" for="userName">Poster's User Name</label>
+      <input type="text" id="userName" name="userName" [(ngModel)]="userName">
+      <label style="margin-left: 20px;margin-right: 10px;" for="city">Your City</label>
+      <input type="text" id="city" name="city" [(ngModel)]="city" placeholder="Toronto,CA">
+      <label style="margin-left: 20px;margin-right: 10px;" for="message">Post/Reply Text</label>
+      <input type="text" id="message" name="message" [(ngModel)]="message">
+      <label style="margin-left: 20px;margin-right: 10px;" for="replyUserName">Replier's Username (Optional)</label>
+      <input type="text" id="replyUserName" name="replyUserName" [(ngModel)]="replyUserName">
+      <input style="margin-left: 20px;" type="submit" class="btn btn-primary" value="Post a New Message / Load Posts">
+    </form>
+    <label style="margin-left: 10px;color:red">{{errorMessage}}</label>
+    <hr>
   </div>
-</form>
-<label style="margin-left: 10px;color:red">{{errorMessage}}</label>
-<hr>
-
-<p [ngStyle]="{'margin-left':(response.messageDepth * 20)+'px'}" *ngFor="let response of responses;">
-  {{response.message}}&nbsp; - {{response.userName}} - {{response.cityDetails}}
-  <button (click)="reply(response.messageId, response.rootMessageId)" onclick="message.value = '';">Reply</button>
-</p>
+  <div class="posts">
+    <div [ngStyle]="{'margin-left':(response.messageDepth * 20)+'px'}" *ngFor="let response of responses;">
+      <div class="card">
+        {{response.message}}&nbsp;
+        <div class="userInfo">{{response.userName}} - {{response.cityDetails}}</div>
+        <button (click)="reply(response.messageId, response.rootMessageId);message.value = '';">Reply</button>
+      </div>
+    </div>
+  </div>
+</div>
