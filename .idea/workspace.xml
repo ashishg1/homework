@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44cfe164-7f7e-4637-9fd8-80c9e91be770" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loyalty/homework/config/HTTPSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ssl-server.jks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,37 +28,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.spec.ts">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="120" column="2" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="2" />
+            <state relative-caret-position="204">
+              <caret line="80" column="74" selection-start-line="80" selection-start-column="74" selection-end-line="80" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/web/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/config/HTTPSConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="106" lean-forward="true" selection-end-line="109" />
+            <state relative-caret-position="440">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#645#1185#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="882">
+              <caret line="342" column="21" selection-start-line="342" selection-start-column="21" selection-end-line="342" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -71,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
-              <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,8 +128,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -160,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ebs.yml" />
         <option value="$PROJECT_DIR$/deployEnv.bat" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/message/message.component.ts" />
@@ -172,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/controllers/RestApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/MessageDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/db/DynamoDBLocalFixture.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/SpringBootAppTest.java" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.module.ts" />
@@ -190,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBFixture.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/db/DynamoDBOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dto/City.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/loyalty/homework/services/CityServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/dao/ReplyDAO.java" />
@@ -211,6 +216,9 @@
         <option value="$PROJECT_DIR$/src/main/web/src/app/service/http-client.service.ts" />
         <option value="$PROJECT_DIR$/src/main/web/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/loyalty/homework/config/HTTPSConfig.java" />
       </list>
     </option>
   </component>
@@ -429,108 +437,6 @@
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="loyalty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="loyalty" type="462c0819:PsiDirectoryNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="loyalty" type="462c0819:PsiDirectoryNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="gatling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -564,22 +470,23 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ashis\IdeaProjects\homework\src\main\resources" />
+      <recent name="C:\Users\ashis\IdeaProjects\homework\target" />
+      <recent name="C:\Users\ashis\IdeaProjects\homework\cloudformation" />
+      <recent name="C:\Users\ashis\IdeaProjects\homework" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.loyalty.homework.services" />
       <recent name="com.loyalty.homework.db" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.loyalty.homework.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ashis\IdeaProjects\homework" />
       <recent name="C:\Users\ashis\IdeaProjects\homework\src\main\resources" />
       <recent name="C:\Users\ashis\IdeaProjects\homework\src\main\java\com\loyalty\homework\db" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.loyalty.homework.dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ashis\IdeaProjects\homework\target" />
-      <recent name="C:\Users\ashis\IdeaProjects\homework\cloudformation" />
-      <recent name="C:\Users\ashis\IdeaProjects\homework" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -594,7 +501,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.homework-1.0-SNAPSHOT.jar">
+  <component name="RunManager" selected="Application.SpringBootApp">
     <configuration name="SpringBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.SpringBootApp" />
       <module name="homework" />
@@ -632,18 +539,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestApiControllerTest.testReplyToReplyIsSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringBootAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.loyalty.homework.controllers.*" />
+          <option name="PATTERN" value="com.loyalty.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.loyalty.homework.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.controllers.RestApiControllerTest" />
-      <option name="METHOD_NAME" value="testReplyToReplyIsSaved" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.loyalty.homework" />
+      <option name="MAIN_CLASS_NAME" value="com.loyalty.homework.SpringBootAppTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -657,15 +563,15 @@
       <item itemvalue="JAR Application.homework-1.0-SNAPSHOT.jar" />
       <item itemvalue="JUnit.All in homework" />
       <item itemvalue="JUnit.RestApiControllerTest" />
-      <item itemvalue="JUnit.RestApiControllerTest.testReplyToReplyIsSaved" />
+      <item itemvalue="JUnit.SpringBootAppTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.homework-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.SpringBootApp" />
+        <item itemvalue="JUnit.SpringBootAppTest" />
+        <item itemvalue="JAR Application.homework-1.0-SNAPSHOT.jar" />
         <item itemvalue="JUnit.All in homework" />
         <item itemvalue="JUnit.RestApiControllerTest" />
-        <item itemvalue="JUnit.RestApiControllerTest.testReplyToReplyIsSaved" />
       </list>
     </recent_temporary>
   </component>
@@ -918,13 +824,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564347060973</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="README">
+      <created>1564350320590</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1564350320590</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Typo in Readme">
+      <created>1564351443374</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1564351443374</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CityServiceTest_testJSONConversion - 2019.07.27 at 14h 35m 39s.xml">
-      <configuration name="CityServiceTest.testJSONConversion" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CityServiceTest - 2019.07.27 at 14h 36m 31s.xml">
       <configuration name="CityServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -952,6 +869,9 @@
     <history-entry file="All_in_homework - 2019.07.27 at 17h 03m 10s.xml">
       <configuration name="All in homework" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringBootAppTest - 2019.07.28 at 18h 14m 37s.xml">
+      <configuration name="SpringBootAppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -966,16 +886,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6130064" weight="0.28444445" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6119403" visible="true" weight="0.28444445" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.32777777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733475" visible="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733475" />
       <window_info anchor="bottom" id="Statistic" order="8" sideWeight="0.49946696" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989339" weight="0.22" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026652" side_tool="true" visible="true" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49840087" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3880597" side_tool="true" visible="true" weight="0.28444445" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4978678" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -995,8 +915,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="buildspec version typo" />
-    <MESSAGE value="Dockerfile version typo" />
     <MESSAGE value="Typo in file" />
     <MESSAGE value="Continous Integration done" />
     <MESSAGE value="move to directory" />
@@ -1020,7 +938,9 @@
     <MESSAGE value="Angular tests and css html cleanup" />
     <MESSAGE value="test fixes and some cleanup/beautification" />
     <MESSAGE value="Final bug fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final bug fix." />
+    <MESSAGE value="README" />
+    <MESSAGE value="Typo in Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Typo in Readme" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1094,26 +1014,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.592/aws-java-sdk-dynamodb-1.11.592-sources.jar!/com/amazonaws/services/dynamodbv2/AmazonDynamoDBClientBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-          <folding>
-            <element signature="e#1983#1984#0" expanded="true" />
-            <element signature="e#2039#2040#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudformation/codebuild.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloudformation/ebs.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -1291,13 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="261" column="21" selection-start-line="261" selection-start-column="21" selection-end-line="261" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/services/CityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1471,7 +1364,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/SpringBootApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
-          <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1495,8 +1388,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="106" lean-forward="true" selection-end-line="109" />
+        <state relative-caret-position="204">
+          <caret line="80" column="74" selection-start-line="80" selection-start-column="74" selection-end-line="80" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="342" column="21" selection-start-line="342" selection-start-column="21" selection-end-line="342" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/loyalty/homework/config/HTTPSConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#645#1185#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
