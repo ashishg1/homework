@@ -60,6 +60,7 @@ describe('AppComponent', () => {
   it('post with username and text should make call to post', () => {
       app.userName = "test";
       app.message = "test post";
+      app.lastUserName = "test";
       app.responses = [];
       spyOn(app.httpClientService, 'post').and.callFake(()=>{
          return of(JSON.parse('{"messageId":"1564272251536-69207586-6455-4894-806c-e87d3c6f1dea","message":"test post","city":"","cityDetails":"","userName":"test"}'));
@@ -68,22 +69,58 @@ describe('AppComponent', () => {
       expect(app.responses[0].message).toEqual("test post");
   });
 
-  it('a second post call should add the post to the local cache of posts', () => {
+  it('a second post call should add the post to the local cache of posts on top', () => {
       app.userName = "test";
       app.message = "test post";
+      app.lastUserName = "test";
       app.responses = [];
       spyOn(app.httpClientService, 'post').and.callFake(()=>{
          return of(JSON.parse('{"messageId":"1564272251536-69207586-6455-4894-806c-e87d3c6f1dea","message":"test post","city":"","cityDetails":"","userName":"test"}'));
       });
       app.post();
-      app.message = "test post";
+      app.message = "test post1";
+
       app.post();
       expect(app.responses.length).toEqual(2);
+  });
+
+  it('a reply to a post without message should set error', () => {
+      app.userName = "test";
+      app.message = "test post";
+      app.lastUserName = "test";
+      app.responses = [];
+      spyOn(app.httpClientService, 'post').and.callFake(()=>{
+         return of(JSON.parse('{"messageId":"1564272251536-69207586-6455-4894-806c-e87d3c6f1dea","message":"test post","city":"","cityDetails":"","userName":"test"}'));
+      });
+      //ideally use a defer here
+      app.post();
+      app.reply();
+      expect(app.errorMessage).toEqual("Please enter a Reply Text");
   });
 
   it('a reply to a post should add reply after the post', () => {
       app.userName = "test";
       app.message = "test post";
+      app.lastUserName = "test";
+      app.responses = [];
+      spyOn(app.httpClientService, 'post').and.callFake(()=>{
+         return of(JSON.parse('{"messageId":"1564272251536-69207586-6455-4894-806c-e87d3c6f1dea","message":"test post","city":"","cityDetails":"","userName":"test"}'));
+      });
+      app.post();
+
+      app.message = "test reply";
+      spyOn(app.httpClientService, 'replyToPost').and.callFake(()=>{
+               return of(JSON.parse('{"messageId":"1564276698669-fd55e1f8-d9a3-4ace-8340-04436faaf7d7","message":"test reply","city":"","cityDetails":"","rootMessageId":"1564272251536-69207586-6455-4894-806c-e87d3c6f1dea","messageDepth":1,"userName":"anoymous"}'));
+      });
+      //ideally use a defer here
+      app.reply();
+      expect(app.responses.length).toEqual(2);
+  });
+
+  it('a reply to a reply should add reply after the reply', () => {
+      app.userName = "test";
+      app.message = "test post";
+      app.lastUserName = "test";
       app.responses = [];
       spyOn(app.httpClientService, 'post').and.callFake(()=>{
          return of(JSON.parse('{"messageId":"1564272251536-69207586-6455-4894-806c-e87d3c6f1dea","message":"test post","city":"","cityDetails":"","userName":"test"}'));
@@ -91,9 +128,12 @@ describe('AppComponent', () => {
       app.post();
       app.message = "test reply";
       spyOn(app.httpClientService, 'replyToPost').and.callFake(()=>{
-               return of(JSON.parse('{"messageId":"1564272251536-69207586-6455-4894-806c-e87d3c6f1dea","message":"test post","city":"","cityDetails":"","userName":"test"}'));
+               return of(JSON.parse('{"messageId":"1564276698669-fd55e1f8-d9a3-4ace-8340-04436faaf7d7","message":"test reply","city":"","cityDetails":"","rootMessageId":"1564275976219-6edd226e-b06d-452c-809c-2ab5dfa2cf18","messageDepth":1,"userName":"anoymous"}'));
       });
-      app.post();
-      expect(app.responses.length).toEqual(2);
+      //ideally use a defer here
+      app.reply();
+      app.message = "test reply2";
+      app.reply();
+      expect(app.responses.length).toEqual(3);
   });
 });

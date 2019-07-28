@@ -37,9 +37,11 @@ export class AppComponent {
       } else {
         this.httpClientService.post(this.userName, this.message, this.city).subscribe(
           data => {
+            data.color = "#F0F8FF";
             this.responses.unshift(data);
           },
           error => {
+            this.errorMessage = "Uh Oh! Seems like server had a failure";
             console.log(error);
           });
       }
@@ -60,18 +62,22 @@ export class AppComponent {
         this.httpClientService.replyToPost(messageId, message, this.replyUserName, this.city).subscribe(
           data => {
             var index = this.findIndexForPostReply(messageId, localResponses);
+            data.color = "#F0F8FF";
             this.responses.splice(index + 1, 0, data);
           },
           error => {
+            this.errorMessage = "Uh Oh! Seems like server had a failure";
             console.log(error);
           });
       } else {
         this.httpClientService.replyToReply(rootMessageId, messageId, message, this.replyUserName, this.city).subscribe(
           data => {
             var index = this.findIndexForReply(messageId, localResponses);
+            data.color = "#F0F8FF";
             this.responses.splice(index + 1, 0, data);
           },
           error => {
+            this.errorMessage = "Uh Oh! Seems like server had a failure";
             console.log(error);
           });
       }

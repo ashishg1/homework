@@ -20,7 +20,8 @@
   </div>
   <div class="posts">
     <div id="scrollToMe"></div>
-    <div [ngStyle]="{'margin-left':(response.messageDepth * 20)+'px'}" *ngFor="let response of responses;">
+    <div [ngStyle]="{'margin-left':(response.messageDepth * 20)+'px','background-color':response.color}"
+         *ngFor="let response of responses;">
       <div class="card">
         {{response.message}}
         <div class="userInfo">{{response.userName}} - {{response.cityDetails}}</div>
