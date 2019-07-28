@@ -123,7 +123,7 @@ export class AppComponent {
     var depth = -1;
     var nextIndex = responses.findIndex(function (item, i) {
       if (index > -1) {
-        if (item.messageDepth < depth) {
+        if (!item.messageDepth || item.messageDepth < depth) {
           return true;
         } else {
           index = i;
