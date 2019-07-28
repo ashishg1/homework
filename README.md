@@ -84,7 +84,7 @@ To delete the stacks please run similar deleteEnv and deleteApplication scripts 
 
 ## HTTPS
 
-The code on master branch runs on HTTPS however see Secure branch for an example of how a local HTTPS version can be setup.
+The code on master branch runs on HTTP however see Secure branch for an example of how a local HTTPS version can be setup. Note: this version should not be deployed on AWS as that configuration does not exist yet. There is further setup required to get HTTPS working on AWS.
 
 ## UI Usage
 
